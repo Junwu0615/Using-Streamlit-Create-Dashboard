@@ -8,7 +8,7 @@
 <br>
 
 ## A.　Showcase Results
-- [Dashboard On Streamlit](https://pc-dashboard.streamlit.app/)
+- #### [Dashboard On Streamlit](https://pc-dashboard.streamlit.app/)
 - ![sample.gif](/source/sample.gif)
 
 <br>
