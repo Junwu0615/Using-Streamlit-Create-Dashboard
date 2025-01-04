@@ -36,42 +36,35 @@ except Exception as e:
 
 # --------- content --------- #
 
-
-
 st.markdown('## Use LineBot Connecting GenA')
+st.image('./source/linebot_qrcode.png', width=200)
 st.markdown(
 '''
-###
+#### Technologies include the following
+ - **Gen AI** : `Chat GPT`
+ - **Image Recognition** : `YOLO`
+ - **Communication Software** : `LineBot`
+<br> 
+''', unsafe_allow_html=True)
 
-#### QR code
-
-###
-
-#### 運用之技術
- - Gen AI : Chat GPT
- - Image Recognition : YOLO
- - Communication Software : LineBot
-
-###
-
-#### 功能列表
-##### A.　創作者 GitHub 頁面
- - Linking to PC's GitHub
- 
-##### B.　創作者 儀表板
- - Linking to PC's Dashboard
- 
-##### C.　IG gif 梗圖名稱搜索
- - ...
-
-##### D.　識別食物分析營養
- - ...
-
-##### E.　男(女)朋友機器人
- - ...
-
-##### F.　基於履歷生成自我介紹
- - ...
- 
-'''
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(
+    ['創作者 GitHub 頁面', '創作者 Dashboard', 'GIF 梗圖名稱搜索', '識別食物分析營養', '男(女)朋友機器人', '基於履歷生成自我介紹']
 )
+with tab1:
+    st.markdown("## Linking to PC's GitHub<br>", unsafe_allow_html=True)
+    st.image('./source/github.jpg', width=800)
+with tab2:
+    st.markdown("## Linking to PC's Dashboard<br>", unsafe_allow_html=True)
+    st.image('./source/dashboard.jpg', width=800)
+with tab3:
+    st.markdown("## Coming Soon ...<br>", unsafe_allow_html=True)
+    st.image('https://static.streamlit.io/examples/owl.jpg', width=200)
+with tab4:
+    st.markdown("## Coming Soon ...<br>", unsafe_allow_html=True)
+    st.image('https://static.streamlit.io/examples/owl.jpg', width=200)
+with tab5:
+    st.markdown("## Coming Soon ...<br>", unsafe_allow_html=True)
+    st.image('https://static.streamlit.io/examples/owl.jpg', width=200)
+with tab6:
+    st.markdown("## Coming Soon ...<br>", unsafe_allow_html=True)
+    st.image('https://static.streamlit.io/examples/owl.jpg', width=200)

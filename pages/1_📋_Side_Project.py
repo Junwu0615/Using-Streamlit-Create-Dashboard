@@ -49,16 +49,3 @@ with tab2:
 with tab3:
     st.header('An owl')
     st.image('https://static.streamlit.io/examples/owl.jpg', width=200)
-
-
-col1, col2 = st.columns([1, 2])  # 左欄寬度1，右欄寬度2
-with col1:
-    st.image('./source/photo-stickers.jpg')
-with col2:
-    st.markdown("""
-    ## About Me  
-    Hi, I'm **Ping Chun Wu**, a passionate developer with expertise in:  
-    - Data Science  
-    - Machine Learning  
-    - Software Development  
-    """)

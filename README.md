@@ -31,9 +31,9 @@ streamlit run 🌐_Home.py
 <br>
 
 ## C.　Dashboard Source
-### [Streamlit 視覺化儀表板](https://streamlit.io/)
-### [Apache Superset 視覺化儀表板](https://superset.apache.org/)
-### [Streamlit 教學文章 I](https://ithelp.ithome.com.tw/articles/10366815)
-### [Flask + Dash + Plotly 產物 I](https://chwang12341.medium.com/data-visualization%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96-python-plotly%E9%80%B2%E9%9A%8E%E8%A6%96%E8%A6%BA%E5%8C%96-dash%E6%95%99%E5%AD%B8-%E4%B8%80-c087c0008b78)
-### [ICON Source I](https://emojipedia.org/bar-chart)
-### [ICON Source II](https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/)
+-  [Streamlit 視覺化儀表板](https://streamlit.io/)
+-  [Apache Superset 視覺化儀表板](https://superset.apache.org/)
+-  [Streamlit 教學文章 I](https://ithelp.ithome.com.tw/articles/10366815)
+-  [Flask + Dash + Plotly 產物 I](https://chwang12341.medium.com/data-visualization%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96-python-plotly%E9%80%B2%E9%9A%8E%E8%A6%96%E8%A6%BA%E5%8C%96-dash%E6%95%99%E5%AD%B8-%E4%B8%80-c087c0008b78)
+-  [ICON Source I](https://emojipedia.org/bar-chart)
+-  [ICON Source II](https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/)
