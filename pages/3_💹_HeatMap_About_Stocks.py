@@ -9,16 +9,3 @@ st.set_page_config(
     page_title='HeatMap About Stocks',
     page_icon='💹')
 st.markdown('## HeatMap About Stocks')
-
-st.write(
-    """
-    敘述...
-    """
-)
-
-st.markdown(
-    '''
-
-
-    '''
-)
