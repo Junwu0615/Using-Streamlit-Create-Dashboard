@@ -96,3 +96,6 @@ css = '''
 </style>
 '''
 st.markdown(css, unsafe_allow_html=True)
+
+st.markdown('<br><br><br>', unsafe_allow_html=True)
+st.caption('<div style="text-align: center"> Streamlit is simply an artifact for Data Scientist.</div>', unsafe_allow_html=True)
