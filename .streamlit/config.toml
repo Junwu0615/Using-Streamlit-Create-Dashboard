@@ -3,9 +3,9 @@ port = 8502
 headless = true
 
 [theme]
-base = 'light'
-#primaryColor = '#1E90FF'  # 主色調
+base = 'dark'
+#primaryColor = '#FF6347'  # 主色調
 #backgroundColor = '#FFFFFF'  # 背景色
 #secondaryBackgroundColor = '#F0F0F0'  # 次背景色
 #textColor = '#000000'  # 文字顏色
-font = 'sans serif' # sans serif # monospace
+font = 'sans serif' # serif # sans serif # monospace

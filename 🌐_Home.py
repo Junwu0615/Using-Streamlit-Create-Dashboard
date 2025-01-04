@@ -36,8 +36,7 @@ except Exception as e:
 
 # --------- content --------- #
 
-st.write('## A self-evolving data scientist, just like deep learning. 🚀')
-st.markdown('#')
+st.write('## A self-evolving data scientist, just like `Deep Learning` 🚀<br>', unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns([1, 2, 1])  # 左欄寬度1，右欄寬度2
 with col1:
@@ -47,18 +46,23 @@ with col2:
     Hi, I'm **Ping Chun Wu**, a passionate developer with a focus on `Data Science`, `Machine Learning`, and `Software Development`. 
     I enjoy solving complex problems and continuously learning to improve my skills.
     ''', unsafe_allow_html=True)
+    st.markdown("""
+    - 2020 USC IM
+    - 2023 FCU IE
+    - 2024 Data Scientist
+    - 2025 ??? 
+    """, unsafe_allow_html=True)
 with col3:
     pass
 
-st.markdown('---')
-
-st.markdown('### Expertise')
+st.markdown('<br>', unsafe_allow_html=True)
+st.markdown('#### EXPERTISE', unsafe_allow_html=True)
 st.markdown(f'''
 ##### A.　Python Skills
- - **Master**
+ - **⭐ MASTER ⭐**
      - [ Strings ], [ List ], [ Tuple ], [ Dict ], [ Set ], [ For Loop ], 
      <br>[ Array ], [ DataFrame ], `[ Class ]`, `[ Inheritance ]`, ... etc.
- - **Frequently Utilized**
+ - **⭐ FREQUENTLY UTILIZED ⭐**
     - **Machine Learning :** PyTorch, `TensorFlow`, `Keras`, Scikit-Learn, `NumPy`, `Pandas`, OpenCV
     - **Data Visualization :** Plotly, Matplotlib, Streamlit, rich, tqdm, ... etc.
     - **Web Crawler :** `BeautifulSoup`, `Selenium`
