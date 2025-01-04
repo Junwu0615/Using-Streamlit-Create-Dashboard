@@ -36,7 +36,7 @@ except Exception as e:
 
 # --------- content --------- #
 
-st.markdown('## Use LineBot Connecting GenAI<br>', unsafe_allow_html=True)
+st.markdown('## Use LineBot Connecting GenAI<br>', unsafe_allow_html=True, help='This service is temporarily closed.')
 st.image('./source/linebot_qrcode.png', width=200)
 st.markdown(
 '''
@@ -89,3 +89,6 @@ css = '''
 </style>
 '''
 st.markdown(css, unsafe_allow_html=True)
+
+st.markdown('<br><br><br>', unsafe_allow_html=True)
+st.caption('<div style="text-align: center"> Streamlit is simply an artifact for Data Scientist.</div>', unsafe_allow_html=True)

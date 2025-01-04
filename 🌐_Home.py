@@ -3,9 +3,14 @@
 @author: PC
 Update Time: 2025-01-04
 """
-import os, shutil
+import os, time, shutil
 import streamlit as st
 from settings import LIGHT, DARK, DEFAULT
+
+def stream_data(stream_strings):
+    for i in stream_strings.split(' '):
+        yield i + ' '
+        time.sleep(0.1)
 
 if 'theme_mode' not in st.session_state:
     st.session_state['theme_mode'] = 'Dark Mode'
@@ -36,46 +41,48 @@ except Exception as e:
 
 # --------- content --------- #
 
-st.write('## A self-evolving data scientist, just like `Deep Learning` 🚀<br>', unsafe_allow_html=True)
+st.write('## 🚀 :rainbow[A self-evolving data scientist, just like Deep Learning] 🚀<br>', unsafe_allow_html=True)
 
-col1, col2, col3 = st.columns([0.9, 2, 0.8]) # 寬度比例
+col1, col2, col3 = st.columns([0.75, 2, 0.8]) # 寬度比例
 with col1:
     st.image('./source/photo-stickers.jpg', caption='Photo-Stickers From My GitHub')
 with col2:
     st.markdown(f'''
-    Hi, I'm **Ping Chun Wu**, a passionate developer with a focus on `Data Science`, `Machine Learning`, and `Software Development`. 
+    Hi, I'm **Ping Chun Wu** :sunglasses:, a passionate developer with a focus on :blue-background[Data Science], :blue-background[Machine Learning], and :blue-background[Software Development]. 
     I enjoy solving complex problems and continuously learning to improve my skills.
     ''', unsafe_allow_html=True)
-    st.markdown("""
-    - 2020 USC IM
-    - 2023 FCU IE
-    - 2024 Data Scientist
-    - 2025 ??? 
-    """, unsafe_allow_html=True)
+
+    if st.button('[ Click Me ] The Growth Experience'):
+        text = ('- 2020 USC IM\n'
+                '- 2023 FCU IE\n'
+                '- 2024 Data Scientist\n'
+                '- 2025 ???')
+        st.write_stream(stream_data(text))
+
 with col3:
     pass
 
 st.markdown('<br>', unsafe_allow_html=True)
 st.markdown('#### EXPERTISE', unsafe_allow_html=True)
 st.markdown(f'''
-##### A.　Python Skills
- - **⭐ MASTER ⭐**
+##### :blue-background[A.]　Python Skills
+ - **⭐ :rainbow[MASTER] ⭐**
      - [ Strings ], [ List ], [ Tuple ], [ Dict ], [ Set ], [ For Loop ], 
      <br>[ Array ], [ DataFrame ], `[ Class ]`, `[ Inheritance ]`, ... etc.
- - **⭐ FREQUENTLY UTILIZED ⭐**
+ - **⭐ :rainbow[FREQUENTLY UTILIZED] ⭐**
     - **Machine Learning :** PyTorch, `TensorFlow`, `Keras`, Scikit-Learn, `NumPy`, `Pandas`, OpenCV
     - **Data Visualization :** Plotly, Matplotlib, Streamlit, rich, tqdm, ... etc.
     - **Web Crawler :** `BeautifulSoup`, `Selenium`
     - **Database :** SQLAlchemy, `pyodbc`
-    - **Special tools :** ArgumentParser, ThreadPoolExecutor, setuptools, ... etc.
+    - **Special Tools :** ArgumentParser, ThreadPoolExecutor, setuptools, ... etc.
     - **Messaging :** LineBotSDK, WebSocket, ... etc.
-    - **Base Tool :** os, enum, time, requests, datetime, decimal, copy, json, flask, pickle, datasets, schedule, PIL, ... etc.
+    - **Base Tools :** os, enum, time, requests, datetime, decimal, copy, json, flask, pickle, datasets, schedule, PIL, ... etc.
 ''', unsafe_allow_html=True)
 
 st.markdown('---')
 
 st.markdown(f'''
-##### B.　Programming
+##### :blue-background[B.]　Programming
  - **Frontend :** HTML / CSS / Markdown
  - **Backend :** `Python` / PHP / C / C++
  - **DataBase :** `SQL Server`
@@ -89,9 +96,12 @@ st.markdown(f'''
 st.markdown('---')
 
 st.markdown(f'''
-##### C.　Production Software
+##### :blue-background[C.]　Production Software
  - **Job Tool :** `ChatGPT` / `Github Copilot` / `Youtrack` / Notion
  - **Programming Environment :** `PyCharm` / Jupyter / Spyder / VScode / VS
  - **Microsoft Office :** Excel / Word / PowerPoint
  - **Adobe Software :** Photoshop / Premiere / After Effects / Acrobat
 ''', unsafe_allow_html=True)
+
+st.markdown('<br><br><br>', unsafe_allow_html=True)
+st.caption('<div style="text-align: center"> Streamlit is simply an artifact for Data Scientist.</div>', unsafe_allow_html=True)
