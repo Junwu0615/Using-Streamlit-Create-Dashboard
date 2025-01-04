@@ -38,7 +38,7 @@ except Exception as e:
 
 st.write('## A self-evolving data scientist, just like `Deep Learning` 🚀<br>', unsafe_allow_html=True)
 
-col1, col2, col3 = st.columns([1, 2, 1])  # 左欄寬度1，右欄寬度2
+col1, col2, col3 = st.columns([0.9, 2, 0.8]) # 寬度比例
 with col1:
     st.image('./source/photo-stickers.jpg', caption='Photo-Stickers From My GitHub')
 with col2:

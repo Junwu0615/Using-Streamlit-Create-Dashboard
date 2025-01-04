@@ -8,6 +8,7 @@
 <br>
 
 ## A.　Showcase Results
+![sample.gif](/source/sample.gif)
 
 <br>
 

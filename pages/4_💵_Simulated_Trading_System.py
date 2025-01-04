@@ -36,7 +36,7 @@ except Exception as e:
 
 # --------- content --------- #
 
-st.markdown('## Simulated Trading System')
+st.markdown('## Simulated Trading System<br>', unsafe_allow_html=True)
 st.markdown(
     '''
     # Coming Soon ...
