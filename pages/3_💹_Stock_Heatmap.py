@@ -36,7 +36,7 @@ except Exception as e:
 
 # --------- content --------- #
 
-st.markdown('## Stock Heatmap')
+st.markdown('## Stock Heatmap<br>', unsafe_allow_html=True)
 st.markdown(
     '''
     # Coming Soon ...
