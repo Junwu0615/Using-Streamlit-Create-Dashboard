@@ -11,8 +11,8 @@ if 'theme_mode' not in st.session_state:
     st.session_state['theme_mode'] = 'Dark Mode'
 
 st.set_page_config(
-    page_title='Steam Discounts Items',
-    page_icon='🎮',
+    page_title='Stock Heatmap',
+    page_icon='💹',
     layout='wide',
     initial_sidebar_state='expanded'
 )
@@ -36,7 +36,7 @@ except Exception as e:
 
 # --------- content --------- #
 
-st.markdown('## Steam Discounts Items')
+st.markdown('## Stock Heatmap')
 st.markdown(
     '''
     # Coming Soon ...
