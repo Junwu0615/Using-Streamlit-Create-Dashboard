@@ -3,9 +3,12 @@
 @author: PC
 Update Time: 2025-01-04
 """
-import shutil
+import os, shutil
 import streamlit as st
 from settings import LIGHT, DARK, DEFAULT
+
+if 'theme_mode' not in st.session_state:
+    st.session_state['theme_mode'] = 'Dark Mode'
 
 st.set_page_config(
     page_title='PC Dashboard',
@@ -14,8 +17,24 @@ st.set_page_config(
     initial_sidebar_state='expanded'
 )
 st.sidebar.success('Select a demo above to get started.')
-theme_mode = st.sidebar.radio("Select Theme Mode:", ("Light Mode", "Dark Mode"))
-shutil.copy(DARK, DEFAULT) if theme_mode == "Light Mode" else shutil.copy(LIGHT, DEFAULT)
+
+theme_mode = st.sidebar.radio(
+    'Select Theme Mode :', ('Light Mode', 'Dark Mode'),
+    index=0 if st.session_state['theme_mode'] == 'Light Mode' else 1
+)
+try:
+    if theme_mode != st.session_state['theme_mode']:
+        st.session_state['theme_mode'] = theme_mode
+        match theme_mode:
+            case 'Dark Mode':
+                shutil.copy2(DARK, DEFAULT)
+            case 'Light Mode':
+                shutil.copy2(LIGHT, DEFAULT)
+        st.rerun()
+except Exception as e:
+    st.error(f'Failed to {e}')
+
+# --------- content --------- #
 
 st.write('## A self-evolving data scientist, just like deep learning. 🚀')
 st.markdown('#')
@@ -29,7 +48,6 @@ with col2:
     I enjoy solving complex problems and continuously learning to improve my skills.
     ''', unsafe_allow_html=True)
 with col3:
-    # st.image('./source/PC.jpg', caption='My Photo')
     pass
 
 st.markdown('---')

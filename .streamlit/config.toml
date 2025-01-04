@@ -2,10 +2,9 @@
 port = 8502
 headless = true
 
-# 夜間模式
 [theme]
-base = 'dark'
-#primaryColor = '#FF6347'  # 主色調
+base = 'light'
+#primaryColor = '#1E90FF'  # 主色調
 #backgroundColor = '#FFFFFF'  # 背景色
 #secondaryBackgroundColor = '#F0F0F0'  # 次背景色
 #textColor = '#000000'  # 文字顏色
