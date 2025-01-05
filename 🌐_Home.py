@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 @author: PC
-Update Time: 2025-01-04
+Update Time: 2025-01-06
 """
 import os, time, shutil
 import streamlit as st
@@ -13,7 +13,11 @@ def stream_data(stream_strings):
         time.sleep(0.1)
 
 if 'theme_mode' not in st.session_state:
-    st.session_state['theme_mode'] = 'Dark Mode'
+    shutil.copy2(DARK, DEFAULT)
+    st.session_state['theme_mode'] = True
+
+if 'df_color' not in st.session_state:
+    st.session_state['df_color'] = 'DarkRed'
 
 st.set_page_config(
     page_title='PC Dashboard',
@@ -23,21 +27,15 @@ st.set_page_config(
 )
 st.sidebar.success('Select a demo above to get started.')
 
-theme_mode = st.sidebar.radio(
-    'Select Theme Mode :', ('Light Mode', 'Dark Mode'),
-    index=0 if st.session_state['theme_mode'] == 'Light Mode' else 1
-)
-try:
-    if theme_mode != st.session_state['theme_mode']:
-        st.session_state['theme_mode'] = theme_mode
-        match theme_mode:
-            case 'Dark Mode':
-                shutil.copy2(DARK, DEFAULT)
-            case 'Light Mode':
-                shutil.copy2(LIGHT, DEFAULT)
-        st.rerun()
-except Exception as e:
-    st.error(f'Failed to {e}')
+on = st.toggle('Theme Mode', value=st.session_state.theme_mode, key=st.session_state.theme_mode, help='Light Mode / Dark Mode')
+if on:
+    shutil.copy2(DARK, DEFAULT)
+    st.session_state['theme_mode'] = True
+    st.session_state['df_color'] = 'DarkRed'
+else:
+    shutil.copy2(LIGHT, DEFAULT)
+    st.session_state['theme_mode'] = False
+    st.session_state['df_color'] = 'LightSteelBlue'
 
 # --------- content --------- #
 
@@ -53,10 +51,10 @@ with col2:
     ''', unsafe_allow_html=True)
 
     if st.button('[ Click Me ] The Growth Experience'):
-        text = ('- 2020 USC IM\n'
-                '- 2023 FCU IE\n'
-                '- 2024 Data Scientist\n'
-                '- 2025 ???')
+        text = ('- 2020 Shih Chien University - Information Management ( IM )\n'
+                '- 2023 Feng Chia University - Computer Science and Information Engineering ( CSIE )\n'
+                '- 2024 Data Scientist ( Hsinchu )\n'
+                '- 2025 ? ? ?')
         st.write_stream(stream_data(text))
 
 with col3:
@@ -65,7 +63,7 @@ with col3:
 st.markdown('<br>', unsafe_allow_html=True)
 st.markdown('#### EXPERTISE', unsafe_allow_html=True)
 st.markdown(f'''
-##### :blue-background[A.]　Python Skills
+##### :blue-background[A . Python Skills]
  - **⭐ :rainbow[MASTER] ⭐**
      - [ Strings ], [ List ], [ Tuple ], [ Dict ], [ Set ], [ For Loop ], 
      <br>[ Array ], [ DataFrame ], `[ Class ]`, `[ Inheritance ]`, ... etc.
@@ -82,7 +80,7 @@ st.markdown(f'''
 st.markdown('---')
 
 st.markdown(f'''
-##### :blue-background[B.]　Programming
+##### :blue-background[B . Programming]
  - **Frontend :** HTML / CSS / Markdown
  - **Backend :** `Python` / PHP / C / C++
  - **DataBase :** `SQL Server`
@@ -96,7 +94,7 @@ st.markdown(f'''
 st.markdown('---')
 
 st.markdown(f'''
-##### :blue-background[C.]　Production Software
+##### :blue-background[C . Production Software]
  - **Job Tool :** `ChatGPT` / `Github Copilot` / `Youtrack` / Notion
  - **Programming Environment :** `PyCharm` / Jupyter / Spyder / VScode / VS
  - **Microsoft Office :** Excel / Word / PowerPoint

@@ -8,7 +8,11 @@ import streamlit as st
 from settings import LIGHT, DARK, DEFAULT
 
 if 'theme_mode' not in st.session_state:
-    st.session_state['theme_mode'] = 'Dark Mode'
+    shutil.copy2(DARK, DEFAULT)
+    st.session_state['theme_mode'] = True
+
+if 'df_color' not in st.session_state:
+    st.session_state['df_color'] = 'DarkRed'
 
 st.set_page_config(
     page_title='Stock Heatmap',
@@ -18,25 +22,18 @@ st.set_page_config(
 )
 st.sidebar.success('Select a demo above to get started.')
 
-theme_mode = st.sidebar.radio(
-    'Select Theme Mode:', ('Light Mode', 'Dark Mode'),
-    index=0 if st.session_state['theme_mode'] == 'Light Mode' else 1
-)
-try:
-    if theme_mode != st.session_state['theme_mode']:
-        st.session_state['theme_mode'] = theme_mode
-        match theme_mode:
-            case 'Dark Mode':
-                shutil.copy2(DARK, DEFAULT)
-            case 'Light Mode':
-                shutil.copy2(LIGHT, DEFAULT)
-        st.rerun()
-except Exception as e:
-    st.error(f'Failed to {e}')
+on = st.toggle('Theme Mode', value=st.session_state.theme_mode, key=st.session_state.theme_mode, help='Light Mode / Dark Mode')
+if on:
+    shutil.copy2(DARK, DEFAULT)
+    st.session_state['theme_mode'] = True
+    st.session_state['df_color'] = 'DarkRed'
+else:
+    shutil.copy2(LIGHT, DEFAULT)
+    st.session_state['theme_mode'] = False
+    st.session_state['df_color'] = 'LightSteelBlue'
 
 # --------- content --------- #
 
-st.markdown('## Stock Heatmap<br>', unsafe_allow_html=True)
 st.markdown(
     '''
     # Coming Soon ...

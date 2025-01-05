@@ -1,14 +1,22 @@
 # -*- coding: utf-8 -*-
 """
 @author: PC
-Update Time: 2025-01-04
+Update Time: 2025-01-06
 """
-import os, shutil
+import os, shutil, json
+import seaborn as sns
+import numpy as np
+import pandas as pd
 import streamlit as st
+from streamlit_extras.badges import badge
 from settings import LIGHT, DARK, DEFAULT
 
 if 'theme_mode' not in st.session_state:
-    st.session_state['theme_mode'] = 'Dark Mode'
+    shutil.copy2(DARK, DEFAULT)
+    st.session_state['theme_mode'] = True
+
+if 'df_color' not in st.session_state:
+    st.session_state['df_color'] = 'DarkRed'
 
 st.set_page_config(
     page_title='Side Project',
@@ -18,25 +26,19 @@ st.set_page_config(
 )
 st.sidebar.success('Select a demo above to get started.')
 
-theme_mode = st.sidebar.radio(
-    'Select Theme Mode:', ('Light Mode', 'Dark Mode'),
-    index=0 if st.session_state['theme_mode'] == 'Light Mode' else 1
-)
-try:
-    if theme_mode != st.session_state['theme_mode']:
-        st.session_state['theme_mode'] = theme_mode
-        match theme_mode:
-            case 'Dark Mode':
-                shutil.copy2(DARK, DEFAULT)
-            case 'Light Mode':
-                shutil.copy2(LIGHT, DEFAULT)
-        st.rerun()
-except Exception as e:
-    st.error(f'Failed to {e}')
+on = st.toggle('Theme Mode', value=st.session_state.theme_mode, key=st.session_state.theme_mode, help='Light Mode / Dark Mode')
+if on:
+    shutil.copy2(DARK, DEFAULT)
+    st.session_state['theme_mode'] = True
+    st.session_state['df_color'] = 'DarkRed'
+else:
+    shutil.copy2(LIGHT, DEFAULT)
+    st.session_state['theme_mode'] = False
+    st.session_state['df_color'] = 'LightSteelBlue'
 
 # --------- content --------- #
 
-st.markdown('## OPEN SOURCE PROJECT<br>', unsafe_allow_html=True)
+st.markdown('## :rainbow[OPEN SOURCE PROJECT]', unsafe_allow_html=True)
 tab1, tab2, tab3, tab4 = st.tabs(
     [
         'Machine Learning',
@@ -88,14 +90,91 @@ with tab4:
     """, unsafe_allow_html=True)
 
 
-css = '''
-<style>
-    .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
-    font-size:1.2rem;
-    }
-</style>
-'''
-st.markdown(css, unsafe_allow_html=True)
+st.markdown('---', unsafe_allow_html=True)
+st.markdown('## :rainbow[PROPRIETARY PROJECT]', unsafe_allow_html=True)
+st.markdown("##### :gray-background[A . LCII-Rec-Model Performance]", unsafe_allow_html=True)
+st.markdown("""
+- ###### [:blue-background[Master's thesis]](https://drive.google.com/file/d/1HhYjno6EakDS5pmoGHuOYHQ-gmq1K3o_/view)  [:blue-background[Journal Link]](https://drive.google.com/file/d/1Qx60S7cAOJsBpTvEVzufoSP0u5ImSI8V/view?usp=sharing)
+""", unsafe_allow_html=True, help='Note : The translator has a translation error')
+loader = json.loads(''.join([i for i in open('./source/lcii_performance.json')]))[0]
+df1 = pd.DataFrame(loader)
+
+edited_df1 = st.data_editor(
+    pd.DataFrame({'Dataset': ['Amazon']}),
+    column_config={
+        'Dataset': st.column_config.SelectboxColumn(
+            'Choose Dataset',
+            help='選擇欲呈現 [資料集]',
+            width='medium',
+            options=[
+                'Amazon',
+                'MovieLens 1M',
+                'Steam',
+            ],
+            required=True,
+        )
+    },
+    hide_index=True,
+)
+s = df1[df1['Dataset'] == edited_df1['Dataset'].values[0]][df1.columns[1:]].style \
+    .highlight_max(subset=df1.columns[2:], color=st.session_state['df_color'], axis=0) \
+    .set_properties(**{'text-align': 'center'}) \
+    .format(precision=3, decimal='.')
+st.dataframe(s, height=len(df1.index)*13, hide_index=True, use_container_width=True)
+
+
+
+st.markdown('<br>', unsafe_allow_html=True)
+st.markdown("##### :gray-background[B . Prediction Trading Volume Performance]", unsafe_allow_html=True)
+st.markdown("""
+- ###### 台股標的有 1800 多個 Symbol ，擁有充分數據量的只有 804 個Symbol。基於 K-means 用來劃分同性質標的，進一步擴展數據量。用 GRU 預測結果如下表所示。
+    - ###### Unit (%)
+    - ###### Min / Max : 檢視極端值性能狀態 :blue-background[( 預期 : 各標的表現不差距過大 )]
+    - ###### IQR : 檢視各級距性能分布狀態 :blue-background[( 預期 : 各標的表現不差距過大 )]
+    - ###### Rate : 檢視小於指定數值範圍，其占整體比重幾何 ex: 性能不超過 10 % 佔比幾何 :blue-background[( 預期 : 越小越好 )]
+""", unsafe_allow_html=True)
+loader = json.loads(''.join([i for i in open('./source/pv_performance.json')]))[0]
+df2 = pd.DataFrame(loader)
+
+edited_df2 = st.data_editor(
+    pd.DataFrame({'Model': ['I.　Clusters Model [108]']}),
+    column_config={
+        'Model': st.column_config.SelectboxColumn(
+            'Choose Clusters Model',
+            help='選擇欲呈現 [基於集群分類之模型]',
+            width='medium',
+            options=[
+                'I.　Clusters Model [108]',
+                'II.　Clusters Model [318]',
+                'III.　Clusters Model [3]',
+                'IV.　Clusters Model [18]',
+                'VI.　Clusters Model [357]',
+            ],
+            required=True,
+        )
+    },
+    hide_index=True,
+)
+cm = sns.light_palette("green", as_cmap=True)
+s = df2[df2['Model'] == edited_df2['Model'].values[0]][df2.columns[1:]].style \
+    .background_gradient(cmap=cm) \
+    .set_properties(**{'text-align': 'center'}) \
+    .format(precision=3, decimal='.')
+st.dataframe(s, height=len(df2.index)*8, hide_index=True, use_container_width=True)
+
+
+
+st.markdown('<br>', unsafe_allow_html=True)
+st.markdown("##### :gray-background[C . 將 LineBot 與 GenAI 整合串接服務]", unsafe_allow_html=True)
+st.page_link("pages/2_🤖_Use_LineBot_Connecting_GenAI.py", label=":rainbow[Use LineBot Connecting GenAI]", icon="🤖")
+
+
+
+st.markdown('''<style>
+    .stTabs [data-baseweb='tab-list']
+    button [data-testid='stMarkdownContainer']
+    p { font-size:1.2rem; }
+</style>''', unsafe_allow_html=True)
 
 st.markdown('<br><br><br>', unsafe_allow_html=True)
 st.caption('<div style="text-align: center"> Streamlit is simply an artifact for Data Scientist.</div>', unsafe_allow_html=True)

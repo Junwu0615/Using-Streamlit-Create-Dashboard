@@ -8,43 +8,41 @@ import streamlit as st
 from settings import LIGHT, DARK, DEFAULT
 
 if 'theme_mode' not in st.session_state:
-    st.session_state['theme_mode'] = 'Dark Mode'
+    shutil.copy2(DARK, DEFAULT)
+    st.session_state['theme_mode'] = True
+
+if 'df_color' not in st.session_state:
+    st.session_state['df_color'] = 'DarkRed'
 
 st.set_page_config(
     page_title='Use LineBot Connecting GenA',
-    page_icon='💬',
+    page_icon='🤖',
     layout='wide',
     initial_sidebar_state='expanded'
 )
 st.sidebar.success('Select a demo above to get started.')
 
-theme_mode = st.sidebar.radio(
-    'Select Theme Mode:', ('Light Mode', 'Dark Mode'),
-    index=0 if st.session_state['theme_mode'] == 'Light Mode' else 1
-)
-try:
-    if theme_mode != st.session_state['theme_mode']:
-        st.session_state['theme_mode'] = theme_mode
-        match theme_mode:
-            case 'Dark Mode':
-                shutil.copy2(DARK, DEFAULT)
-            case 'Light Mode':
-                shutil.copy2(LIGHT, DEFAULT)
-        st.rerun()
-except Exception as e:
-    st.error(f'Failed to {e}')
+on = st.toggle('Theme Mode', value=st.session_state.theme_mode, key=st.session_state.theme_mode, help='Light Mode / Dark Mode')
+if on:
+    shutil.copy2(DARK, DEFAULT)
+    st.session_state['theme_mode'] = True
+    st.session_state['df_color'] = 'DarkRed'
+else:
+    shutil.copy2(LIGHT, DEFAULT)
+    st.session_state['theme_mode'] = False
+    st.session_state['df_color'] = 'LightSteelBlue'
 
 # --------- content --------- #
 
-st.markdown('## Use LineBot Connecting GenAI<br>', unsafe_allow_html=True, help='This service is temporarily closed.')
+st.markdown('## Use LineBot Connecting GenAI', unsafe_allow_html=True, help='This service is temporarily closed.')
 st.image('./source/linebot_qrcode.png', width=200)
 st.markdown(
 '''
 #### Technologies include the following
- - **Gen AI** : `Chat GPT`
- - **Image Recognition** : `YOLO`
- - **Communication Software** : `LineBot`
- - **Programming** : `Python`
+ - **Gen AI** : :blue-background[Chat GPT]
+ - **Image Recognition** : :blue-background[YOLO]
+ - **Communication Software** : :blue-background[LineBot]
+ - **Programming** : :blue-background[Python]
 <br> 
 ''', unsafe_allow_html=True)
 
@@ -58,27 +56,27 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(
 )
 with tab1:
     # 創作者 GitHub 頁面
-    st.markdown("## Linking to PC's GitHub<br>", unsafe_allow_html=True)
+    st.markdown("### Linking to PC's GitHub<br>", unsafe_allow_html=True)
     st.image('./source/github.jpg', width=800)
 with tab2:
     # 創作者 Dashboard 頁面
-    st.markdown("## Linking to PC's Dashboard<br>", unsafe_allow_html=True)
+    st.markdown("### Linking to PC's Dashboard<br>", unsafe_allow_html=True)
     st.image('./source/dashboard.jpg', width=800)
 with tab3:
     # GIF 梗圖名稱搜索
-    st.markdown("## Coming Soon ...<br>", unsafe_allow_html=True)
+    st.markdown("### Coming Soon ...<br>", unsafe_allow_html=True)
     st.image('https://static.streamlit.io/examples/owl.jpg', width=200)
 with tab4:
     # 識別食物，分析營養，最後給予建議
-    st.markdown("## Coming Soon ...<br>", unsafe_allow_html=True)
+    st.markdown("### Coming Soon ...<br>", unsafe_allow_html=True)
     st.image('https://static.streamlit.io/examples/owl.jpg', width=200)
 with tab5:
     # 男(女)朋友機器人
-    st.markdown("## Coming Soon ...<br>", unsafe_allow_html=True)
+    st.markdown("### Coming Soon ...<br>", unsafe_allow_html=True)
     st.image('https://static.streamlit.io/examples/owl.jpg', width=200)
 with tab6:
     # 基於履歷生成自我介紹
-    st.markdown("## Coming Soon ...<br>", unsafe_allow_html=True)
+    st.markdown("### Coming Soon ...<br>", unsafe_allow_html=True)
     st.image('https://static.streamlit.io/examples/owl.jpg', width=200)
 
 css = '''
