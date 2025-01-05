@@ -46,11 +46,11 @@ with col1:
     st.image('./source/photo-stickers.jpg', caption='Photo-Stickers From My GitHub')
 with col2:
     st.markdown(f'''
-    Hi, I'm **Ping Chun Wu** :sunglasses:, a passionate developer with a focus on :blue-background[Data Science], :blue-background[Machine Learning], and :blue-background[Software Development]. 
+    Hi, I'm **Ping Chun Wu** :sunglasses:, a passionate developer with a focus on :blue-background[*Data Science*], :blue-background[*Machine Learning*], and :blue-background[*Software Development*]. 
     I enjoy solving complex problems and continuously learning to improve my skills.
     ''', unsafe_allow_html=True)
 
-    if st.button('[ Click Me ] The Growth Experience'):
+    if st.button('[ Click Me ] Professional Growth'):
         text = ('- 2020 Shih Chien University - Information Management ( IM )\n'
                 '- 2023 Feng Chia University - Computer Science and Information Engineering ( CSIE )\n'
                 '- 2024 Data Scientist ( Hsinchu )\n'
@@ -65,8 +65,7 @@ st.markdown('#### EXPERTISE', unsafe_allow_html=True)
 st.markdown(f'''
 ##### :blue-background[A . Python Skills]
  - **⭐ :rainbow[MASTER] ⭐**
-     - [ Strings ], [ List ], [ Tuple ], [ Dict ], [ Set ], [ For Loop ], 
-     <br>[ Array ], [ DataFrame ], `[ Class ]`, `[ Inheritance ]`, ... etc.
+     - *Strings ,  List ,  Tuple ,  Dict ,  Set ,  For Loop, Array ,  DataFrame , ` Class `, ` Inheritance `, ... etc.*
  - **⭐ :rainbow[FREQUENTLY UTILIZED] ⭐**
     - **Machine Learning :** PyTorch, `TensorFlow`, `Keras`, Scikit-Learn, `NumPy`, `Pandas`, OpenCV
     - **Data Visualization :** Plotly, Matplotlib, Streamlit, rich, tqdm, ... etc.

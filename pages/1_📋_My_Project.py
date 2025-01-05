@@ -91,9 +91,9 @@ with tab4:
 
 st.markdown('---', unsafe_allow_html=True)
 st.markdown('## :rainbow[PROPRIETARY PROJECT]', unsafe_allow_html=True)
-st.markdown("##### :gray-background[A . LCII-Rec-Model Performance]", unsafe_allow_html=True)
+st.markdown('##### A . LCII-Rec-Model Performance', unsafe_allow_html=True)
 st.markdown("""
-- ###### [:blue-background[Master's thesis]](https://drive.google.com/file/d/1HhYjno6EakDS5pmoGHuOYHQ-gmq1K3o_/view)  [:blue-background[Journal Link]](https://drive.google.com/file/d/1Qx60S7cAOJsBpTvEVzufoSP0u5ImSI8V/view?usp=sharing)
+###### [:blue-background[Master's thesis]](https://drive.google.com/file/d/1HhYjno6EakDS5pmoGHuOYHQ-gmq1K3o_/view)  [:blue-background[Journal Link]](https://drive.google.com/file/d/1Qx60S7cAOJsBpTvEVzufoSP0u5ImSI8V/view?usp=sharing)
 """, unsafe_allow_html=True, help='Note : The translator has a translation error')
 
 @st.cache_data
@@ -128,9 +128,9 @@ st.dataframe(s, height=len(df1.index)*13, hide_index=True, use_container_width=T
 
 
 st.markdown('<br>', unsafe_allow_html=True)
-st.markdown("##### :gray-background[B . Prediction Trading Volume Performance]", unsafe_allow_html=True)
+st.markdown('##### B . Prediction Trading Volume Performance', unsafe_allow_html=True)
 st.markdown("""
-- ###### 台股標的有 1800 多個 Symbol ，擁有充分數據量的只有 804 個Symbol。基於 K-means 用來劃分同性質標的，進一步擴展數據量。用 GRU 預測結果如下表所示。
+- ###### 台股標的有 1800 多個 Symbol ，擁有充分數據量的只有 804 個 Symbol。基於 `K-means` 用來劃分同性質標的，進一步擴展數據量。用 `GRU` 預測結果如下表所示。
     - ###### Unit (%)
     - ###### Min / Max : 檢視極端值性能狀態 :blue-background[( 預期 : 各標的表現不差距過大 )]
     - ###### IQR : 檢視各級距性能分布狀態 :blue-background[( 預期 : 各標的表現不差距過大 )]
@@ -162,7 +162,7 @@ edited_df2 = st.data_editor(
     },
     hide_index=True,
 )
-cm = sns.light_palette("green", as_cmap=True)
+cm = sns.light_palette('green', as_cmap=True)
 s = df2[(df2['Model'] == edited_df2['Model'].values[0])][df2.columns[1:]].style \
     .set_properties(**{'text-align': 'center'}) \
     .format(precision=3, decimal='.') \
@@ -172,8 +172,8 @@ st.dataframe(s, height=len(df2.index)*8, hide_index=True, use_container_width=Tr
 
 
 st.markdown('<br>', unsafe_allow_html=True)
-st.markdown("##### :gray-background[C . 將 LineBot 與 GenAI 整合串接服務]", unsafe_allow_html=True)
-st.page_link("pages/2_🤖_Use_LineBot_Connecting_GenAI.py", label=":rainbow[Use LineBot Connecting GenAI]", icon="🤖")
+st.markdown('##### C . 將 LineBot 與 GenAI 整合串接服務', unsafe_allow_html=True)
+st.page_link('pages/2_🤖_Use_LineBot_Connecting_GenAI.py', label=':rainbow[Use LineBot Connecting GenAI]', icon='🤖')
 
 
 
