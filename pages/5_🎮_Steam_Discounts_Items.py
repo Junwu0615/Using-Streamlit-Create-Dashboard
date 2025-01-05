@@ -35,7 +35,7 @@ st.sidebar.success('Select a demo above to get started.')
 
 st.markdown(
     '''
-    # Coming Soon ...
+    # :rainbow[Coming Soon ...]
     '''
 )
 
