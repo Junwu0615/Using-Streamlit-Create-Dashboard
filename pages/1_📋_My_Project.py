@@ -3,17 +3,16 @@
 @author: PC
 Update Time: 2025-01-06
 """
-import os, shutil, json
-import seaborn as sns
+import json
 import numpy as np
 import pandas as pd
+import seaborn as sns
 import streamlit as st
-from streamlit_extras.badges import badge
 from settings import LIGHT, DARK, DEFAULT
 
-if 'theme_mode' not in st.session_state:
-    shutil.copy2(DARK, DEFAULT)
-    st.session_state['theme_mode'] = True
+# if 'theme_mode' not in st.session_state:
+#     shutil.copy2(DARK, DEFAULT)
+#     st.session_state['theme_mode'] = True
 
 if 'df_color' not in st.session_state:
     st.session_state['df_color'] = 'DarkRed'
@@ -26,15 +25,15 @@ st.set_page_config(
 )
 st.sidebar.success('Select a demo above to get started.')
 
-on = st.toggle('Theme Mode', value=st.session_state.theme_mode, key=st.session_state.theme_mode, help='Light Mode / Dark Mode')
-if on:
-    shutil.copy2(DARK, DEFAULT)
-    st.session_state['theme_mode'] = True
-    st.session_state['df_color'] = 'DarkRed'
-else:
-    shutil.copy2(LIGHT, DEFAULT)
-    st.session_state['theme_mode'] = False
-    st.session_state['df_color'] = 'LightSteelBlue'
+# on = st.toggle('Theme Mode', value=st.session_state.theme_mode, help='Light Mode / Dark Mode')
+# if on:
+#     shutil.copy2(DARK, DEFAULT)
+#     st.session_state['theme_mode'] = True
+#     st.session_state['df_color'] = 'DarkRed'
+# else:
+#     shutil.copy2(LIGHT, DEFAULT)
+#     st.session_state['theme_mode'] = False
+#     st.session_state['df_color'] = 'LightSteelBlue'
 
 # --------- content --------- #
 
@@ -96,8 +95,12 @@ st.markdown("##### :gray-background[A . LCII-Rec-Model Performance]", unsafe_all
 st.markdown("""
 - ###### [:blue-background[Master's thesis]](https://drive.google.com/file/d/1HhYjno6EakDS5pmoGHuOYHQ-gmq1K3o_/view)  [:blue-background[Journal Link]](https://drive.google.com/file/d/1Qx60S7cAOJsBpTvEVzufoSP0u5ImSI8V/view?usp=sharing)
 """, unsafe_allow_html=True, help='Note : The translator has a translation error')
-loader = json.loads(''.join([i for i in open('./source/lcii_performance.json')]))[0]
-df1 = pd.DataFrame(loader)
+
+@st.cache_data
+def load_data_1():
+    loader = json.loads(''.join([i for i in open('./source/lcii_performance.json')]))[0]
+    return loader
+df1 = pd.DataFrame(load_data_1())
 
 edited_df1 = st.data_editor(
     pd.DataFrame({'Dataset': ['Amazon']}),
@@ -133,8 +136,12 @@ st.markdown("""
     - ###### IQR : 檢視各級距性能分布狀態 :blue-background[( 預期 : 各標的表現不差距過大 )]
     - ###### Rate : 檢視小於指定數值範圍，其占整體比重幾何 ex: 性能不超過 10 % 佔比幾何 :blue-background[( 預期 : 越小越好 )]
 """, unsafe_allow_html=True)
-loader = json.loads(''.join([i for i in open('./source/pv_performance.json')]))[0]
-df2 = pd.DataFrame(loader)
+
+@st.cache_data
+def load_data_2():
+    loader = json.loads(''.join([i for i in open('./source/pv_performance.json')]))[0]
+    return loader
+df2 = pd.DataFrame(load_data_2())
 
 edited_df2 = st.data_editor(
     pd.DataFrame({'Model': ['I.　Clusters Model [108]']}),
@@ -156,10 +163,10 @@ edited_df2 = st.data_editor(
     hide_index=True,
 )
 cm = sns.light_palette("green", as_cmap=True)
-s = df2[df2['Model'] == edited_df2['Model'].values[0]][df2.columns[1:]].style \
-    .background_gradient(cmap=cm) \
+s = df2[(df2['Model'] == edited_df2['Model'].values[0])][df2.columns[1:]].style \
     .set_properties(**{'text-align': 'center'}) \
-    .format(precision=3, decimal='.')
+    .format(precision=3, decimal='.') \
+    .background_gradient(cmap=cm)
 st.dataframe(s, height=len(df2.index)*8, hide_index=True, use_container_width=True)
 
 
