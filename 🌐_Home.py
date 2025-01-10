@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 """
 @author: PC
-Update Time: 2025-01-06
+Update Time: 2025-01-11
 """
 import time
+import numpy as np
+import pandas as pd
 import streamlit as st
 from settings import LIGHT, DARK, DEFAULT
 
@@ -60,6 +62,20 @@ with col2:
 with col3:
     pass
 
+# st.markdown('<br>', unsafe_allow_html=True)
+#
+# progress_bar = st.sidebar.progress(0)
+# status_text = st.sidebar.empty()
+# last_rows = np.random.randn(1, 1)
+# chart = st.line_chart(last_rows)
+# for i in range(1, 101):
+#     new_rows = last_rows[-1, :] + np.random.randn(5, 1).cumsum(axis=0)
+#     status_text.text("%i%% Complete" % i)
+#     chart.add_rows(new_rows)
+#     progress_bar.progress(i)
+#     last_rows = new_rows
+#     time.sleep(0.05)
+
 st.markdown('<br>', unsafe_allow_html=True)
 st.markdown('#### EXPERTISE', unsafe_allow_html=True)
 st.markdown(f'''
@@ -94,7 +110,7 @@ st.markdown('---')
 
 st.markdown(f'''
 ##### :blue-background[C . Production Software]
- - **Job Tool :** `ChatGPT` / `Github Copilot` / `Youtrack` / Notion
+ - **Job Tool :** `ChatGPT` / `Github Copilot` / `Youtrack` / Notion / Google Gemini
  - **Programming Environment :** `PyCharm` / Jupyter / Spyder / VScode / VS
  - **Microsoft Office :** Excel / Word / PowerPoint
  - **Adobe Software :** Photoshop / Premiere / After Effects / Acrobat
