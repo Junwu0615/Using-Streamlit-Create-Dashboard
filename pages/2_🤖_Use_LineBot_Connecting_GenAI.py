@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 """
 @author: PC
-Update Time: 2025-01-04
+Update Time: 2025-01-11
 """
+import json, time, requests
+import numpy as np
+import pandas as pd
 import streamlit as st
 from settings import LIGHT, DARK, DEFAULT
 
@@ -33,50 +36,96 @@ st.sidebar.success('Select a demo above to get started.')
 
 # --------- content --------- #
 
-st.markdown('## :rainbow[Use LineBot Connecting GenAI]', unsafe_allow_html=True, help='This service is temporarily closed.')
+st.markdown('## :rainbow[Use LineBot Connecting GenAI]', unsafe_allow_html=True, help='Beta Testing')
 st.image('./source/linebot_qrcode.png', width=200)
+
+@st.cache_data
+def get_stat_data():
+    gist_url = 'https://gist.github.com/Junwu0615/ca299a80b6f8c17db9067a6c60ea6681'
+    res = requests.get(f"{gist_url}/raw")
+    if res.status_code in [200, 201]:
+        loader = json.loads(res.text)
+        chart_data = pd.DataFrame({0: loader})
+        return chart_data
+    else:
+        print(f"Failed to fetch Gist: {res.status_code}")
+        return None
+
+chart_data = get_stat_data()
+# print(chart_data)
+
+if st.button('Manually Update Data', icon='📊'):
+    get_stat_data.clear()
+    chart_data = get_stat_data()
+
+if chart_data is not None:
+    st.bar_chart(
+        chart_data,
+        x_label='Count',
+        y_label='Statistics Item',
+        color=['#b53a3a'],
+        width=1000,
+        horizontal=True, # 交換x/y軸
+        use_container_width=False,
+    )
+
+# idx = 0
+# chart = st.empty()
+# while idx < 5:
+#     # 若有多個用戶則可按筆數來動態更新
+#     chart_data = pd.DataFrame(np.random.randn(50, 3), columns=["a", "b", "c"])
+#     chart.bar_chart(chart_data)
+#     time.sleep(0.2)
+#     idx += 1
+
 st.markdown(
 '''
-#### Technologies include the following
- - **Gen AI** : :blue-background[Chat GPT]
- - **Image Recognition** : :blue-background[YOLO]
- - **Communication Software** : :blue-background[LineBot]
- - **Programming** : :blue-background[Python]
+##### :blue-background[Current Application Technologies]
+ - **Gen AI** : ~~`Chat GPT`~~ `Google Gemini`
+ - **Backend** : `Git Gist` `SQL Server` `NGROK` `Flask`
+ - **Communication Software** : `LineBot`
+ - **Programming** : `Python`
+<br> 
+##### :blue-background[Future Work]
+ - **Image Recognition** : `YOLO`
+ - **Deploy** : `Docker` `Cloud`
+ - **Development** : :red-background[*Human Companion Robot*]
 <br> 
 ''', unsafe_allow_html=True)
 
 tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(
-    ['Creator’s GitHub',
-     'Creator’s Dashboard',
-     'GIF Meme Name Search',
-     'Identify Food and Feedback',
-     'Human Companion Robot',
-     'Generate Self-Introduction']
+    ['A. Creator’s GitHub',
+     'B. Identify Food and Feedback',
+     'C. GIF Meme Name Search',
+     'D. Creator’s Dashboard',
+     'E. Human Companion Robot',
+     'F. Generate Self-Introduction']
 )
 with tab1:
     # Creator’s GitHub
     st.markdown("### Linking to PC's GitHub<br>", unsafe_allow_html=True)
     st.image('./source/github.jpg', width=800)
+
 with tab2:
+    # Identify Food and Feedback
+    st.markdown("### Creating examples ...<br>", unsafe_allow_html=True)
+
+with tab3:
+    # GIF Meme Name Search
+    st.markdown("### Creating examples ...<br>", unsafe_allow_html=True)
+
+with tab4:
     # Creator’s Dashboard
     st.markdown("### Linking to PC's Dashboard<br>", unsafe_allow_html=True)
     st.image('./source/dashboard.jpg', width=800)
-with tab3:
-    # GIF Meme Name Search
-    st.markdown("### Coming Soon ...<br>", unsafe_allow_html=True)
-    st.image('https://static.streamlit.io/examples/owl.jpg', width=200)
-with tab4:
-    # Identify Food and Feedback
-    st.markdown("### Coming Soon ...<br>", unsafe_allow_html=True)
-    st.image('https://static.streamlit.io/examples/owl.jpg', width=200)
+
 with tab5:
     # Human Companion Robot
     st.markdown("### Coming Soon ...<br>", unsafe_allow_html=True)
-    st.image('https://static.streamlit.io/examples/owl.jpg', width=200)
+
 with tab6:
     # Generate Self-Introduction
-    st.markdown("### Coming Soon ...<br>", unsafe_allow_html=True)
-    st.image('https://static.streamlit.io/examples/owl.jpg', width=200)
+    st.markdown("### Creating examples ...<br>", unsafe_allow_html=True)
 
 css = '''
 <style>
