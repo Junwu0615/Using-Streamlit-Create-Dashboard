@@ -82,7 +82,7 @@ st.markdown(
 '''
 ##### :blue-background[Current Application Technologies]
  - **Gen AI** : ~~`Chat GPT`~~ `Google Gemini`
- - **Backend** : `Git Gist` `SQL Server` `NGROK` `Flask`
+ - **Backend** : `SQL Server` `NGROK` `Flask` `Git Gist` `GitHub` 
  - **Communication Software** : `LineBot`
  - **Programming** : `Python`
 <br> 
