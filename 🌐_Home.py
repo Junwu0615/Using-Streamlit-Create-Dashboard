@@ -81,7 +81,7 @@ st.markdown('#### EXPERTISE', unsafe_allow_html=True)
 st.markdown(f'''
 ##### :blue-background[A . Python Skills]
  - **⭐ :rainbow[MASTER] ⭐**
-     - *Strings ,  List ,  Tuple ,  Dict ,  Set ,  For Loop, Array ,  DataFrame , ` Class `, ` Inheritance `, ... etc.*
+     - Strings ,  List ,  Tuple ,  Dict ,  Set ,  For Loop, Array ,  DataFrame , ` Class `, ` Inheritance `, ... etc.
  - **⭐ :rainbow[FREQUENTLY UTILIZED] ⭐**
     - **Machine Learning :** PyTorch, `TensorFlow`, `Keras`, Scikit-Learn, `NumPy`, `Pandas`, OpenCV
     - **Data Visualization :** Plotly, Matplotlib, Streamlit, rich, tqdm, ... etc.
