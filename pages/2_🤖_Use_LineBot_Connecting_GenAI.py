@@ -103,29 +103,27 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(
 )
 with tab1:
     # Creator’s GitHub
-    st.markdown("### Linking to PC's GitHub<br>", unsafe_allow_html=True)
-    st.image('./source/github.jpg', width=800)
+    st.image('./source/a.gif')
 
 with tab2:
     # Identify Food and Feedback
-    st.markdown("### Creating examples ...<br>", unsafe_allow_html=True)
+    st.image('./source/b.gif')
 
 with tab3:
     # GIF Meme Name Search
-    st.markdown("### Creating examples ...<br>", unsafe_allow_html=True)
+    st.image('./source/c.gif')
 
 with tab4:
     # Creator’s Dashboard
-    st.markdown("### Linking to PC's Dashboard<br>", unsafe_allow_html=True)
-    st.image('./source/dashboard.jpg', width=800)
+    st.image('./source/d.gif')
 
 with tab5:
     # Human Companion Robot
-    st.markdown("### Coming Soon ...<br>", unsafe_allow_html=True)
+    st.image('./source/e.gif')
 
 with tab6:
     # Generate Self-Introduction
-    st.markdown("### Creating examples ...<br>", unsafe_allow_html=True)
+    st.image('./source/f.gif')
 
 css = '''
 <style>
