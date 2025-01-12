@@ -173,7 +173,7 @@ st.dataframe(s, height=len(df2.index)*8, hide_index=True, use_container_width=Tr
 
 st.markdown('<br>', unsafe_allow_html=True)
 st.markdown('##### C . 將 LineBot 與 GenAI 整合串接服務', unsafe_allow_html=True)
-st.page_link('pages/2_🤖_Use_LineBot_Connecting_GenAI.py', label=':rainbow[Use LineBot Connecting GenAI]', icon='🤖')
+st.page_link('pages/3_🤖_Use_LineBot_Connecting_GenAI.py', label=':rainbow[Use LineBot Connecting GenAI]', icon='🤖')
 
 
 
