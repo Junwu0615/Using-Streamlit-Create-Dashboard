@@ -37,7 +37,7 @@ st.sidebar.success('Select a demo above to get started.')
 
 # --------- content --------- #
 
-st.markdown('## :rainbow[OPEN SOURCE PROJECT]', unsafe_allow_html=True)
+st.markdown('## :rainbow[*OPEN SOURCE PROJECT*]', unsafe_allow_html=True)
 tab1, tab2, tab3, tab4 = st.tabs(
     [
         'Machine Learning',
@@ -90,7 +90,7 @@ with tab4:
 
 
 st.markdown('---', unsafe_allow_html=True)
-st.markdown('## :rainbow[PROPRIETARY PROJECT]', unsafe_allow_html=True)
+st.markdown('## :rainbow[*PROPRIETARY PROJECT*]', unsafe_allow_html=True)
 
 st.markdown('##### A . 運用 LineBot 透過 GenAI 結合串接服務', unsafe_allow_html=True)
 st.page_link('pages/3_🤖_Use_LineBot_Connecting_GenAI.py', label=':rainbow[Use LineBot Connecting GenAI]', icon='🤖')
