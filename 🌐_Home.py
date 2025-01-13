@@ -81,8 +81,8 @@ st.markdown(f'''
     - **Data Visualization :** Plotly, Matplotlib, Streamlit, rich, tqdm, ... etc.
     - **Web Crawler :** `BeautifulSoup`, `Selenium`
     - **Database :** SQLAlchemy, `pyodbc`
-    - **Special Tools :** ArgumentParser, ThreadPoolExecutor, setuptools, ... etc.
     - **Messaging :** LineBotSDK, WebSocket, ... etc.
+    - **Special Tools :** ArgumentParser, ThreadPoolExecutor, setuptools, ... etc.
     - **Base Tools :** os, enum, time, requests, datetime, decimal, copy, json, flask, pickle, datasets, schedule, PIL, ... etc.
 ''', unsafe_allow_html=True)
 
@@ -92,7 +92,7 @@ st.markdown(f'''
 ##### :blue-background[B . Programming]
  - **Frontend :** HTML / CSS / Markdown
  - **Backend :** `Python` / PHP / C / C++
- - **DataBase :** `SQL Server`
+ - **Database :** `SQL Server`
  - **Version Control :** `GitHub`
  - **Deploy :** `Docker`
  - **Messaging :** MQTT / WebSocket / Line / Telegram
