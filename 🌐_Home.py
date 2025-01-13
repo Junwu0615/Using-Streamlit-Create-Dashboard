@@ -41,7 +41,7 @@ st.sidebar.success('Select a demo above to get started.')
 
 # --------- content --------- #
 
-st.write('## 🚀 :rainbow[A self-evolving data scientist, just like Deep Learning] 🚀<br>', unsafe_allow_html=True)
+st.write('# 🚀 :rainbow[*A self-evolving data scientist, just like Deep Learning*] 🚀<br>', unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns([0.75, 2, 0.8]) # 寬度比例
 with col1:
@@ -109,6 +109,25 @@ st.markdown(f'''
  - **Microsoft Office :** Excel / Word / PowerPoint
  - **Adobe Software :** Photoshop / Premiere / After Effects / Acrobat
 ''', unsafe_allow_html=True)
+
+
+st.markdown("""
+<style>
+.rainbow-animation {
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(90deg, red, orange, yellow, green, indigo, violet);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 5s linear infinite;
+}
+@keyframes rainbow {
+  100% { background-position: 100%; }
+  100% { background-position: -200%; }
+}
+</style>
+""", unsafe_allow_html=True)
 
 st.markdown('<br><br><br>', unsafe_allow_html=True)
 st.caption('<div style="text-align: center"> Streamlit is simply an artifact for Data Scientist.</div>', unsafe_allow_html=True)

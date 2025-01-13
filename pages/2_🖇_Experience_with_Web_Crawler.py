@@ -32,6 +32,7 @@ st.sidebar.success('Select a demo above to get started.')
 #     st.session_state['df_color'] = 'LightSteelBlue'
 
 # --------- content --------- #
+st.markdown('## :rainbow[*Experience with Web Crawler*]')
 col1, col2 = st.columns([1, 0.5]) # 寬度比例
 with col1:
     st.markdown("""
@@ -44,7 +45,7 @@ with col1:
 with col2:
     pass
 
-st.markdown("""###### :blue-background[*A. Other Platform Resources*]""", help='其他平台資源')
+st.markdown("""###### :blue-background[⭐ Other Platform Resources]""", help='其他平台資源')
 marquee_1 = """
 <div style="width: 100%; overflow: hidden; white-space: nowrap; box-sizing: border-box; background-color: white; padding: 10px; border-radius: 10px; border: 1px solid #ddd;">
     <div style="display: inline-block; animation: marquee 22s linear infinite;">
@@ -74,7 +75,7 @@ marquee_1 = """
 st.markdown(marquee_1, unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
-st.markdown("""###### :blue-background[*B. [Fintech] Foreign Platform Resources*]""", help='[金融科技] 海外平台資源')
+st.markdown("""###### :blue-background[⭐ [Fintech] Foreign Platform Resources]""", help='[金融科技] 海外平台資源')
 marquee_2 = """
 <div style="width: 100%; overflow: hidden; white-space: nowrap; box-sizing: border-box; background-color: white; padding: 10px; border-radius: 10px; border: 1px solid #ddd;">
     <div style="display: inline-block; animation: marquee 27s linear infinite;">
@@ -104,7 +105,7 @@ marquee_2 = """
 st.markdown(marquee_2, unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
-st.markdown("""###### :blue-background[*C. [Fintech] Domestic Platform Resources*]""", help='[金融科技] 國內平台資源')
+st.markdown("""###### :blue-background[⭐ [Fintech] Domestic Platform Resources]""", help='[金融科技] 國內平台資源')
 marquee_3 = """
 <div style="width: 100%; overflow: hidden; white-space: nowrap; box-sizing: border-box; background-color: white; padding: 10px; border-radius: 10px; border: 1px solid #ddd;">
     <div style="display: inline-block; animation: marquee 20s linear infinite;">
@@ -135,7 +136,7 @@ marquee_3 = """
 st.markdown(marquee_3, unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
-st.markdown("""###### :blue-background[*D. [Fintech] Domestic Investment Credit*]""", help='[金融科技] 國內所有投信資源')
+st.markdown("""###### :blue-background[⭐ [Fintech] Domestic Investment Credit]""", help='[金融科技] 國內所有投信資源')
 marquee_4 = """
 <div style="width: 100%; overflow: hidden; white-space: nowrap; box-sizing: border-box; background-color: white; padding: 10px; border-radius: 10px; border: 1px solid #ddd;">
     <div style="display: inline-block; animation: marquee 22s linear infinite;">
