@@ -7,6 +7,7 @@ import json, time, requests
 import numpy as np
 import pandas as pd
 import streamlit as st
+from base64 import b64encode
 from settings import LIGHT, DARK, DEFAULT
 
 # if 'theme_mode' not in st.session_state:
@@ -42,6 +43,8 @@ def get_stat_data():
     res = requests.get(f"{gist_url}/raw")
     if res.status_code in [200, 201]:
         loader = json.loads(res.text)
+        del loader['text count']
+        del loader['media count']
         chart_data = pd.DataFrame({0: loader})
         return chart_data
     else:
@@ -55,7 +58,17 @@ chart_data = get_stat_data()
 
 col1, col2, col3 = st.columns([0.6, 2, 0.8]) # 寬度比例
 with col1:
-    st.image('./source/linebot_qrcode.png', width=200)
+    # st.image('./source/linebot_qrcode.png', width=200)
+    with open("./source/linebot_qrcode.png", "rb") as img_file:
+        img_data = b64encode(img_file.read()).decode()
+    st.markdown(
+    f"""
+    <a href="https://line.me/R/ti/p/@059dtndx" target="_blank">
+        <img src="data:image/png;base64,{img_data}" alt="QR Code" width="200">
+    </a>
+    """, unsafe_allow_html=True)
+
+    st.markdown('<br>', unsafe_allow_html=True)
 
     if st.button('Manually Update Data', icon='📊'):
         get_stat_data.clear()
