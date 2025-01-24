@@ -29,6 +29,10 @@ pip install -r requirements.txt
 ```py
 streamlit run 🌐_Home.py
 ```
+```py
+# OSError: [WinError 10013] 嘗試以存取權限禁止的方式存取套接字
+streamlit run 🌐_Home.py --server.port 5998
+```
 
 <br>
 
