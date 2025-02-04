@@ -54,21 +54,21 @@ marquee_1 = """
         <img src="https://pngimg.com/uploads/github/github_PNG23.png" alt="GitHub" height="60px" style="margin: 0 20px;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/LeetCode_Logo_black_with_text.svg/2560px-LeetCode_Logo_black_with_text.svg.png" alt="LeetCode" height="40px" style="margin: 0 20px;">
         <img src="https://i.imgur.com/XwoKyiS.jpeg" alt="PTT" height="90px" style="margin: 0 20px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/104_logo.png/1200px-104_logo.png" alt="104" height="30px" style="margin: 0 20px;">
+        <img src="https://lh4.googleusercontent.com/-c0MO3an6LW0bk_-nx3FfZwytUPRPFocKsrh6P18NPGSUz5NgnVD0-Rt8Tc0t3m-11aXZZRH6ofdCryQuW_achRtARicWKRUXwg5w4s85OqWpniiG2mpV8xlifkozayFUVFlM6EW" alt="cake" height="100px" style="margin: 0 20px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZ7ZArYB9mBrBw4WJA7Oqf2d7kOqA41DYzw&s" alt="goodjob" height="80px" style="margin: 0 20px;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTISSeEHJJ_JoA50xJ8M7yXyUogbXw1GX4ctw&s" alt="pornhub" height="50px" style="margin: 0 20px;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-h1Z5--PFgKXN_kIDwmMLDPb0UPYkA5wqkQ&s" alt="全家" height="30px" style="margin: 0 20px;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3ctoewVRq0kbMEsV4w33l-3BhWGYMdbSK3g&s" alt="Google Trend" height="60px" style="margin: 0 20px;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Google_news_logo.png" alt="Google News" height="100px" style="margin: 0 20px;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPP9j7kx1_2tuPHzHs_kk77GNZ12OZGMqjmQ&s" alt="JVID" height="80px" style="margin: 0 20px;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google" height="55px" style="margin: 0 20px;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png" alt="youtube" height="30px" style="margin: 0 20px;">
         <img src="https://pngimg.com/uploads/github/github_PNG23.png" alt="GitHub" height="60px" style="margin: 0 20px;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/LeetCode_Logo_black_with_text.svg/2560px-LeetCode_Logo_black_with_text.svg.png" alt="LeetCode" height="40px" style="margin: 0 20px;">
         <img src="https://i.imgur.com/XwoKyiS.jpeg" alt="PTT" height="90px" style="margin: 0 20px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/104_logo.png/1200px-104_logo.png" alt="104" height="30px" style="margin: 0 20px;">
+        <img src="https://lh4.googleusercontent.com/-c0MO3an6LW0bk_-nx3FfZwytUPRPFocKsrh6P18NPGSUz5NgnVD0-Rt8Tc0t3m-11aXZZRH6ofdCryQuW_achRtARicWKRUXwg5w4s85OqWpniiG2mpV8xlifkozayFUVFlM6EW" alt="cake" height="100px" style="margin: 0 20px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZ7ZArYB9mBrBw4WJA7Oqf2d7kOqA41DYzw&s" alt="goodjob" height="80px" style="margin: 0 20px;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTISSeEHJJ_JoA50xJ8M7yXyUogbXw1GX4ctw&s" alt="pornhub" height="50px" style="margin: 0 20px;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-h1Z5--PFgKXN_kIDwmMLDPb0UPYkA5wqkQ&s" alt="全家" height="30px" style="margin: 0 20px;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3ctoewVRq0kbMEsV4w33l-3BhWGYMdbSK3g&s" alt="Google Trend" height="60px" style="margin: 0 20px;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Google_news_logo.png" alt="Google News" height="100px" style="margin: 0 20px;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPP9j7kx1_2tuPHzHs_kk77GNZ12OZGMqjmQ&s" alt="JVID" height="80px" style="margin: 0 20px;">
     </div>
 </div>
 """

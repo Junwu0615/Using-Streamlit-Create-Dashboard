@@ -75,7 +75,7 @@ st.markdown('#### EXPERTISE', unsafe_allow_html=True)
 st.markdown(f'''
 ##### :blue-background[A . Python Skills]
  - **⭐ :rainbow[MASTER] ⭐**
-     - Strings ,  List ,  Tuple ,  Dict ,  Set ,  For Loop, Array ,  DataFrame , ` Class `, ` Inheritance `, ... etc.
+     - Strings ,  List ,  Tuple ,  Dict ,  Set ,  For Loop, Array ,  DataFrame , Class, Inheritance, ... etc.
  - **⭐ :rainbow[FREQUENTLY UTILIZED] ⭐**
     - **Machine Learning :** PyTorch, `TensorFlow`, `Keras`, Scikit-Learn, `NumPy`, `Pandas`, OpenCV
     - **Data Visualization :** Plotly, Matplotlib, Streamlit, rich, tqdm, ... etc.
@@ -92,9 +92,9 @@ st.markdown(f'''
 ##### :blue-background[B . Programming]
  - **Frontend :** HTML / CSS / Markdown
  - **Backend :** `Python` / PHP / C / C++
- - **Database :** `SQL Server`
+ - **Database :** `SQL Server` / PostgreSQL / MySQL / SQLite
  - **Version Control :** `GitHub`
- - **Deploy :** `Docker`
+ - **Deploy :** `Docker` ( Container / Image / Swarm / Compose )
  - **Messaging :** MQTT / WebSocket / Line / Telegram
  - **Operating System :** Windows / Linux
  - **Other :** WampServer / NGROK / Git-Gist / Git Action / GistHub.io
