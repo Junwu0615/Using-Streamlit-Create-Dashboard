@@ -78,12 +78,12 @@ st.markdown(f'''
      - Strings ,  List ,  Tuple ,  Dict ,  Set ,  For Loop, Array ,  DataFrame , Class, Inheritance, ... etc.
  - **⭐ :rainbow[FREQUENTLY UTILIZED] ⭐**
     - **Machine Learning :** PyTorch, `TensorFlow`, `Keras`, Scikit-Learn, `NumPy`, `Pandas`, OpenCV
-    - **Data Visualization :** Plotly, Matplotlib, Streamlit, rich, tqdm, ... etc.
+    - **Data Visualization :** `Streamlit`, Plotly, Matplotlib, ... etc.
     - **Web Crawler :** `BeautifulSoup`, `Selenium`
     - **Database :** SQLAlchemy, `pyodbc`
     - **Messaging :** LineBotSDK, WebSocket, ... etc.
     - **Special Tools :** ArgumentParser, ThreadPoolExecutor, setuptools, ... etc.
-    - **Base Tools :** os, enum, time, requests, datetime, decimal, copy, json, flask, pickle, datasets, schedule, PIL, ... etc.
+    - **Base Tools :** os, enum, time, requests, datetime, decimal, copy, json, flask, pickle, datasets, schedule, PIL, rich, tqdm, ... etc.
 ''', unsafe_allow_html=True)
 
 st.markdown('---')
