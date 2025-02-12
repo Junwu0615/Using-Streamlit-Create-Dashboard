@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 @author: PC
-Update Time: 2025-01-13
+Update Time: 2025-02-12
 """
 import streamlit as st
 from settings import LIGHT, DARK, DEFAULT
@@ -36,10 +36,19 @@ st.markdown('## :rainbow[*Experience with Web Crawler*]')
 col1, col2 = st.columns([1, 0.5]) # 寬度比例
 with col1:
     st.markdown("""
-    #### I have extensive experience in web crawler across various types of websites. Before initiating any task, I ensure the following steps :
-    - Define the `data model specifications`.
-    - Identify the most efficient method to `extract resources` from the target website.
-    - Implement logic for `scheduling` and integrate `automated deployment processes`.
+    #### Before initiating any :blue-background[web crawler], I ensure the following steps :
+    - Define the `data table specifications` of database.
+    - Determine the `most efficient` method for extracting resources from the target website.
+      - API
+      - HTML
+      - Script
+      - CSV / Excel
+    - Implement `ETL` logic.
+      - `Extract`：download data from the data source
+      - `Transform`：clean and format the data
+      - `Load`：store the data in the database
+    - Automate `deployment`.
+    #### Experienced with :rainbow[60] types of web crawlers, as shown below.
     <br>
     """, unsafe_allow_html=True)
 with col2:
