@@ -7,6 +7,7 @@ import time
 import numpy as np
 import pandas as pd
 import streamlit as st
+from depend.visit_count_logic import visit_count
 from settings import LIGHT, DARK, DEFAULT
 
 def stream_data(stream_strings):
@@ -40,6 +41,10 @@ st.sidebar.success('Select a demo above to get started.')
 #     st.session_state['df_color'] = 'LightSteelBlue'
 
 # --------- content --------- #
+# 顯示訪客次數
+st.markdown(f"""
+<img alt="Visit_Count" src="https://img.shields.io/badge/Visit_Count-{visit_count('C2')}-blue&logo=github">
+""", unsafe_allow_html=True)
 
 st.write('# 🚀 :rainbow[*A self-evolving data scientist, just like Deep Learning*] 🚀<br>', unsafe_allow_html=True)
 

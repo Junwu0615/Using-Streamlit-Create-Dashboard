@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 from base64 import b64encode
+from depend.visit_count_logic import visit_count
 from settings import LIGHT, DARK, DEFAULT
 
 # if 'theme_mode' not in st.session_state:
@@ -36,6 +37,10 @@ st.sidebar.success('Select a demo above to get started.')
 #     st.session_state['df_color'] = 'LightSteelBlue'
 
 # --------- content --------- #
+# 顯示訪客次數
+st.markdown(f"""
+<img alt="Visit_Count" src="https://img.shields.io/badge/Visit_Count-{visit_count('C5')}-blue&logo=github">
+""", unsafe_allow_html=True)
 
 @st.cache_data
 def get_stat_data():

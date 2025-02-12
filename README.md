@@ -7,13 +7,16 @@
 
 <br>
 
-## A.　Showcase Results
-- #### [Dashboard: https://pc-dashboard.streamlit.app/](https://pc-dashboard.streamlit.app/)
-- ![sample.gif](/source/sample.gif)
+## *A.　Showcase Results*
+- ### [Dashboard: https://pc-dashboard.streamlit.app/](https://pc-dashboard.streamlit.app/)
+  - ![gif](/source/sample.gif)
+- ### 用 [Google Sheet](https://docs.google.com/spreadsheets/d/1hwF4D_wlJ6QVh0t79oBagx8ybLrPFi81wsotj_cSpJ8/edit?usp=sharing) 製作訪客計數器
+  - 具體用 [Google API](https://console.cloud.google.com/) 連接 Google Sheet 來編輯文件
+  - ![gif](/source/google_sheet.gif)
 
 <br>
 
-## B.　How To Use
+## *B.　How To Use*
 
 ### STEP.1　CLONE
 ```py
@@ -36,7 +39,7 @@ streamlit run 🌐_Home.py --server.port 5998
 
 <br>
 
-## C.　Dashboard Source
+## *C.　Dashboard Source & Reference*
 -  [Streamlit 視覺化儀表板](https://streamlit.io/)
 -  [Apache Superset 視覺化儀表板](https://superset.apache.org/)
 -  [Streamlit 佈署至雲端教學](https://www.youtube.com/watch?v=HKoOBiAaHGg)
@@ -45,3 +48,4 @@ streamlit run 🌐_Home.py --server.port 5998
 -  [ICON Source I](https://emojipedia.org/bar-chart)
 -  [ICON Source II](https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/)
 -  [Color Type I](https://www.w3schools.com/colors/colors_names.asp)
+-  [訪客計數器: Google Sheet 教學](https://ithelp.ithome.com.tw/articles/10234325)

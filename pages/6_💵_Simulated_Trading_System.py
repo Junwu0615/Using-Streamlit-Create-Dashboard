@@ -4,6 +4,7 @@
 Update Time: 2025-01-04
 """
 import streamlit as st
+from depend.visit_count_logic import visit_count
 from settings import LIGHT, DARK, DEFAULT
 
 # if 'theme_mode' not in st.session_state:
@@ -32,6 +33,10 @@ st.sidebar.success('Select a demo above to get started.')
 #     st.session_state['df_color'] = 'LightSteelBlue'
 
 # --------- content --------- #
+# 顯示訪客次數
+st.markdown(f"""
+<img alt="Visit_Count" src="https://img.shields.io/badge/Visit_Count-{visit_count('C8')}-blue&logo=github">
+""", unsafe_allow_html=True)
 
 st.markdown(
     '''
