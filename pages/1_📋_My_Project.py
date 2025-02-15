@@ -43,8 +43,9 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 st.markdown('## :rainbow[*OPEN SOURCE PROJECT*]', unsafe_allow_html=True)
-tab1, tab2, tab3, tab4 = st.tabs(
+tab1, tab2, tab3, tab4, tab5 = st.tabs(
     [
+        'LLM',
         'Machine Learning',
         'Backend',
         'Data Visualization',
@@ -52,6 +53,14 @@ tab1, tab2, tab3, tab4 = st.tabs(
     ])
 
 with tab1:
+    # LLM
+    st.markdown("""
+    | <div style='width: 230px'> Title </div> | <div style='width: 80px'> Clone </div> | <div style='width: 300px'> Technologies </div> |
+    |--|:--:|--|
+    | [PC-Bot-With-GenAI](https://github.com/Junwu0615/PC-Bot-With-GenAI) | <img alt="Clone" src="https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count_total&url=https://gist.githubusercontent.com/Junwu0615/8c304a23bb8dad13ba9658dbaa3f806c/raw/PC-Bot-With-GenAI_clone.json&logo=github"> | ![Google Gemini](https://img.shields.io/badge/Google_Gemini-8E75B2.svg?logo=googlegemini&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED.svg?logo=docker&logoColor=white) ![SQL_Server](https://img.shields.io/badge/SQL_Server-646565.svg?logo=data:image/jpeg;base64,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) ![Line](https://img.shields.io/badge/Line-00c300.svg?logo=line&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000.svg?logo=flask&logoColor=white) ![NGROK](https://img.shields.io/badge/NGROK-1F1E37.svg?logo=ngrok&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB.svg?logo=python&logoColor=white) |
+    """, unsafe_allow_html=True)
+
+with tab2:
     # Machine Learning
     st.markdown("""
     | <div style='width: 230px'> Title </div> | <div style='width: 80px'> Clone </div> | <div style='width: 300px'> Technologies </div> |
@@ -60,7 +69,7 @@ with tab1:
     | [NVDA-Price-Stock-Prediction](https://github.com/Junwu0615/NVDA-Price-Stock-Prediction) |  <img alt="Clone" src="https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count_total&url=https://gist.githubusercontent.com/Junwu0615/05f5b34eedbee0ef7d196fdb42ee61f6/raw/NVDA-Price-Stock-Prediction_clone.json&logo=github"> | ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00.svg?logo=tensorflow&logoColor=white) ![Keras](https://img.shields.io/badge/Keras-D00000.svg?logo=keras&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB.svg?logo=python&logoColor=white) |
     """, unsafe_allow_html=True)
 
-with tab2:
+with tab3:
     # Backend
     st.markdown("""
     | <div style='width: 230px'> Title </div> | <div style='width: 80px'> Clone </div> | <div style='width: 300px'> Technologies </div> |
@@ -75,7 +84,7 @@ with tab2:
     | [The-First-PHP-Login-System](https://github.com/Junwu0615/The-First-PHP-Login-System) |  <img alt="Clone" src="https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count_total&url=https://gist.githubusercontent.com/Junwu0615/ab14c4824b25cc2eb94c56e63b133e32/raw/The-First-PHP-Login-System_clone.json&logo=github"> | ![MySQL](https://img.shields.io/badge/MySQL-4479A1.svg?logo=MySQL&logoColor=white) ![Wampserver](https://img.shields.io/badge/Wampserver-C6007E.svg?logo=wasmcloud&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4.svg?logo=PHP&logoColor=white) |
     """, unsafe_allow_html=True)
 
-with tab3:
+with tab4:
     # Data Visualization
     st.markdown("""
     | <div style='width: 230px'> Title </div> | <div style='width: 80px'> Clone </div> | <div style='width: 300px'> Technologies </div> |
@@ -83,7 +92,7 @@ with tab3:
     | [Using-Streamlit-Create-Dashboard](https://github.com/Junwu0615/Using-Streamlit-Create-Dashboard) | <img alt="Clone" src="https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count_total&url=https://gist.githubusercontent.com/Junwu0615/bba308b4514074dc7b93d762906f329b/raw/Using-Streamlit-Create-Dashboard_clone.json&logo=github"> | ![Streamlit](https://img.shields.io/badge/Streamlit-167C80.svg?logo=streamlit) ![Streamlit_Cloud](https://img.shields.io/badge/Streamlit_Cloud-41454A.svg?logo=icloud) ![Google_Sheet](https://img.shields.io/badge/Google_Sheet-3F4F95.svg?logo=googlesheets) ![Plotly](https://img.shields.io/badge/Plotly-3F4F75.svg?logo=plotly) ![Python](https://img.shields.io/badge/Python-3776AB.svg?logo=python&logoColor=white) |
     """, unsafe_allow_html=True)
 
-with tab4:
+with tab5:
     # Web Crawler
     st.markdown("""
     | <div style='width: 230px'> Title </div> | <div style='width: 80px'> Clone </div> | <div style='width: 300px'> Technologies </div> |
@@ -102,13 +111,7 @@ with tab4:
 st.markdown('---', unsafe_allow_html=True)
 st.markdown('## :rainbow[*PROPRIETARY PROJECT*]', unsafe_allow_html=True)
 
-st.markdown('##### A . 運用 LineBot 透過 GenAI 結合串接服務', unsafe_allow_html=True)
-st.page_link('pages/3_🤖_Use_LineBot_Connecting_GenAI.py', label=':rainbow[Use LineBot Connecting GenAI]', icon='🤖')
-
-
-
-st.markdown('<br>', unsafe_allow_html=True)
-st.markdown('##### B . LCII-Rec-Model Performance', unsafe_allow_html=True)
+st.markdown('##### A . LCII-Rec-Model Performance', unsafe_allow_html=True)
 st.markdown("""
 ###### [:blue-background[Master's thesis]](https://drive.google.com/file/d/1HhYjno6EakDS5pmoGHuOYHQ-gmq1K3o_/view)  [:blue-background[Journal Link]](https://drive.google.com/file/d/1Qx60S7cAOJsBpTvEVzufoSP0u5ImSI8V/view?usp=sharing)
 """, unsafe_allow_html=True, help='Note : The translator has a translation error')
@@ -145,7 +148,7 @@ st.dataframe(s, height=len(df1.index)*13, hide_index=True, use_container_width=T
 
 
 st.markdown('<br>', unsafe_allow_html=True)
-st.markdown('##### C . Prediction Trading Volume Performance', unsafe_allow_html=True)
+st.markdown('##### B . Prediction Trading Volume Performance', unsafe_allow_html=True)
 st.markdown("""
 - ###### 台股標的有 1800 多個 Symbol ，擁有充分數據量的只有 804 個 Symbol。基於 `K-means` 用來劃分同性質標的，進一步擴展數據量。用 `GRU` 預測結果如下表所示。
     - ###### Unit (%)
