@@ -71,6 +71,7 @@ marquee_1 = """
         <img src="https://i.imgur.com/XwoKyiS.jpeg" alt="PTT" height="90px" style="margin: 0 20px;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/104_logo.png/1200px-104_logo.png" alt="104" height="30px" style="margin: 0 20px;">
         <img src="https://lh4.googleusercontent.com/-c0MO3an6LW0bk_-nx3FfZwytUPRPFocKsrh6P18NPGSUz5NgnVD0-Rt8Tc0t3m-11aXZZRH6ofdCryQuW_achRtARicWKRUXwg5w4s85OqWpniiG2mpV8xlifkozayFUVFlM6EW" alt="cake" height="100px" style="margin: 0 20px;">
+        <img src="https://static.wixstatic.com/media/cc8b39_74e1637c716840fcb4dc1d0f07868a94~mv2.jpg/v1/fill/w_876,h_344,al_c/cc8b39_74e1637c716840fcb4dc1d0f07868a94~mv2.jpg" alt="yourator" height="100px" style="margin: 0 20px;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZ7ZArYB9mBrBw4WJA7Oqf2d7kOqA41DYzw&s" alt="goodjob" height="80px" style="margin: 0 20px;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTISSeEHJJ_JoA50xJ8M7yXyUogbXw1GX4ctw&s" alt="pornhub" height="50px" style="margin: 0 20px;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-h1Z5--PFgKXN_kIDwmMLDPb0UPYkA5wqkQ&s" alt="全家" height="30px" style="margin: 0 20px;">
@@ -81,9 +82,7 @@ marquee_1 = """
         <img src="https://i.imgur.com/XwoKyiS.jpeg" alt="PTT" height="90px" style="margin: 0 20px;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/104_logo.png/1200px-104_logo.png" alt="104" height="30px" style="margin: 0 20px;">
         <img src="https://lh4.googleusercontent.com/-c0MO3an6LW0bk_-nx3FfZwytUPRPFocKsrh6P18NPGSUz5NgnVD0-Rt8Tc0t3m-11aXZZRH6ofdCryQuW_achRtARicWKRUXwg5w4s85OqWpniiG2mpV8xlifkozayFUVFlM6EW" alt="cake" height="100px" style="margin: 0 20px;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZ7ZArYB9mBrBw4WJA7Oqf2d7kOqA41DYzw&s" alt="goodjob" height="80px" style="margin: 0 20px;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTISSeEHJJ_JoA50xJ8M7yXyUogbXw1GX4ctw&s" alt="pornhub" height="50px" style="margin: 0 20px;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-h1Z5--PFgKXN_kIDwmMLDPb0UPYkA5wqkQ&s" alt="全家" height="30px" style="margin: 0 20px;">
+        <img src="https://static.wixstatic.com/media/cc8b39_74e1637c716840fcb4dc1d0f07868a94~mv2.jpg/v1/fill/w_876,h_344,al_c/cc8b39_74e1637c716840fcb4dc1d0f07868a94~mv2.jpg" alt="yourator" height="100px" style="margin: 0 20px;">
     </div>
 </div>
 """
