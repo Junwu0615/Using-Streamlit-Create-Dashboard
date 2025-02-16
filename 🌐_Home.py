@@ -42,8 +42,14 @@ st.sidebar.success('Select a demo above to get started.')
 
 # --------- content --------- #
 # 顯示訪客次數
+# ?style=flat, social, flat-square, plastic, for-the-badge 更改 style
+# ?color=red 更改 Logo 顏色
+# ?labelColor=black 更改背景顏色
+# ?logoColor=white 更改 label 背景顏色
+# ?logo=github  更改 Logo # https://simpleicons.org/
+# ?label=YourText 更改 label 名稱
 st.markdown(f"""
-<img alt="Visit_Count" src="https://img.shields.io/badge/Visit_Count-{visit_count('C2')}-blue&logo=github">
+<img alt="Visit_Count" src="https://img.shields.io/badge/Visit_Count-{visit_count('C2')}-blue?logo=ferrari&style=flat-square">
 """, unsafe_allow_html=True)
 
 st.write('# 🚀 :rainbow[*A self-evolving data scientist, just like Deep Learning*] 🚀<br>', unsafe_allow_html=True)

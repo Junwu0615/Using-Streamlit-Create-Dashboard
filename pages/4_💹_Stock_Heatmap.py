@@ -35,7 +35,7 @@ st.sidebar.success('Select a demo above to get started.')
 # --------- content --------- #
 # 顯示訪客次數
 st.markdown(f"""
-<img alt="Visit_Count" src="https://img.shields.io/badge/Visit_Count-{visit_count('C6')}-blue&logo=github">
+<img alt="Visit_Count" src="https://img.shields.io/badge/Visit_Count-{visit_count('C6')}-blue?logo=ferrari&style=flat-square">
 """, unsafe_allow_html=True)
 
 st.markdown(
