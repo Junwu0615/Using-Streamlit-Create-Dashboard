@@ -15,8 +15,8 @@ if 'df_color' not in st.session_state:
     st.session_state['df_color'] = 'DarkRed'
 
 st.set_page_config(
-    page_title='Steam Discounts Items',
-    page_icon='🎮',
+    page_title='Stock Heatmap',
+    page_icon='💹',
     layout='wide',
     initial_sidebar_state='expanded'
 )

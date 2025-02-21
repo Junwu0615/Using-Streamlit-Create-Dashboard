@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 @author: PC
-Update Time: 2025-01-04
+Update Time: 2025-02-21
 """
 import streamlit as st
 from depend.visit_count_logic import visit_count
@@ -15,8 +15,8 @@ if 'df_color' not in st.session_state:
     st.session_state['df_color'] = 'DarkRed'
 
 st.set_page_config(
-    page_title='Simulated Trading System',
-    page_icon='💵',
+    page_title='DevOps Concept Implementation',
+    page_icon='⚙️',
     layout='wide',
     initial_sidebar_state='expanded'
 )
@@ -35,7 +35,7 @@ st.sidebar.success('Select a demo above to get started.')
 # --------- content --------- #
 # 顯示訪客次數
 st.markdown(f"""
-<img alt="Visit_Count" src="https://img.shields.io/badge/Visit_Count-{visit_count('C8')}-blue?logo=ferrari&style=flat-square">
+<img alt="Visit_Count" src="https://img.shields.io/badge/Visit_Count-{visit_count('C6')}-blue?logo=ferrari&style=flat-square">
 """, unsafe_allow_html=True)
 
 st.markdown(
