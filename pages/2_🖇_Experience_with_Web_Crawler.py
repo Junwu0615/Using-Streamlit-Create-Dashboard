@@ -42,25 +42,25 @@ st.markdown('## :rainbow[*Experience with Web Crawler*]')
 col1, col2 = st.columns([1, 0.5]) # 寬度比例
 with col1:
     st.markdown("""
-    #### Before initiating any :blue-background[web crawler], I ensure the following steps :
-    - Define the `data table specifications` of database.
-    - Determine the `most efficient` method for extracting resources from the target website.
-      - API
-      - HTML
-      - Script
-      - CSV / Excel
-    - Implement `ETL` logic.
-      - `Extract`：download data from the data source
-      - `Transform`：clean and format the data
-      - `Load`：store the data in the database
-    - Automate `deployment`.
-    #### Experienced with :rainbow[60] types of web crawlers, as shown below.
+    #### *Before initiating any web crawler, I ensure the following steps :*
+    - *Define the `data table specifications` of database.*
+    - *Determine the `most efficient` method for extracting resources from the target website.*
+      - *API / JSON*
+      - *HTML*
+      - *Script*
+      - *CSV / Excel*
+    - *Implement `ETL` logic.*
+      - *`Extract`：download data from the data source*
+      - *`Transform`：clean and format the data*
+      - *`Load`：store the data in the database*
+    - *Automate `deployment`.*
+    #### *Experienced with :rainbow[60] types of web crawlers, as shown below.*
     <br>
     """, unsafe_allow_html=True)
 with col2:
     pass
 
-st.markdown("""###### :blue-background[⭐ Other Platform Resources]""", help='其他平台資源')
+st.markdown("""###### :blue-background[*⭐ Other Platform Resources*]""", help='其他平台資源')
 marquee_1 = """
 <div style="width: 100%; overflow: hidden; white-space: nowrap; box-sizing: border-box; background-color: white; padding: 10px; border-radius: 10px; border: 1px solid #ddd;">
     <div style="display: inline-block; animation: marquee 22s linear infinite;">
@@ -89,7 +89,7 @@ marquee_1 = """
 st.markdown(marquee_1, unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
-st.markdown("""###### :blue-background[⭐ [Fintech] Foreign Platform Resources]""", help='[金融科技] 海外平台資源')
+st.markdown("""###### :blue-background[*⭐ [ Fintech ] Foreign Platform Resources*]""", help='[金融科技] 海外平台資源')
 marquee_2 = """
 <div style="width: 100%; overflow: hidden; white-space: nowrap; box-sizing: border-box; background-color: white; padding: 10px; border-radius: 10px; border: 1px solid #ddd;">
     <div style="display: inline-block; animation: marquee 27s linear infinite;">
@@ -119,7 +119,7 @@ marquee_2 = """
 st.markdown(marquee_2, unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
-st.markdown("""###### :blue-background[⭐ [Fintech] Domestic Platform Resources]""", help='[金融科技] 國內平台資源')
+st.markdown("""###### :blue-background[*⭐ [ Fintech ] Domestic Platform Resources*]""", help='[金融科技] 國內平台資源')
 marquee_3 = """
 <div style="width: 100%; overflow: hidden; white-space: nowrap; box-sizing: border-box; background-color: white; padding: 10px; border-radius: 10px; border: 1px solid #ddd;">
     <div style="display: inline-block; animation: marquee 20s linear infinite;">
@@ -150,7 +150,7 @@ marquee_3 = """
 st.markdown(marquee_3, unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
-st.markdown("""###### :blue-background[⭐ [Fintech] Domestic Investment Credit]""", help='[金融科技] 國內所有投信資源')
+st.markdown("""###### :blue-background[*⭐ [ Fintech ] Domestic Investment Credit*]""", help='[金融科技] 國內所有投信資源')
 marquee_4 = """
 <div style="width: 100%; overflow: hidden; white-space: nowrap; box-sizing: border-box; background-color: white; padding: 10px; border-radius: 10px; border: 1px solid #ddd;">
     <div style="display: inline-block; animation: marquee 22s linear infinite;">
