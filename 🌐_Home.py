@@ -444,7 +444,7 @@ st.markdown(f'''
             <tr>
                 <td align="center" style="border: none;">
                     <a href="https://www.jetbrains.com/pycharm/">
-                        <img alt="PyCharm" src="https://skillicons.dev/icons?i=pycharm" width="50" height="50"/>
+                        <img alt="PyCharm" width="50" height="50" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/pycharm.gif" />
                     </a>
                     <br> PyCharm
                 </td>
@@ -494,7 +494,7 @@ st.markdown(f'''
     <table>
         <thead>
             <tr>
-                <th colspan="2" align="center"> Operating System </th>
+                <th colspan="3" align="center"> Operating System </th>
                 <th colspan="2" align="center"> Command Tools </th>
                 <th colspan="4" align="center"> Job Tools </th>
             </tr>
@@ -512,6 +512,12 @@ st.markdown(f'''
                         <img alt="Linux" width="40" height="50" src="https://skillicons.dev/icons?i=linux"/>
                     </a>
                     <br> Linux
+                </td>
+                <td align="center" style="border: none;">
+                    <a href="https://ubuntu.com/download">
+                        <img alt="Ubuntu" width="70" height="50" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/ubuntu.gif" />
+                    </a>
+                    <br> Ubuntu
                 </td>
                 <td align="center" style="border: none;">
                     <a href="https://learn.microsoft.com/zh-tw/powershell/scripting/overview?view=powershell-7.5">
@@ -655,6 +661,7 @@ st.markdown(f'''
         </tbody>
     </table>
 </div>
+
 ''', unsafe_allow_html=True)
 
 st.markdown("""
