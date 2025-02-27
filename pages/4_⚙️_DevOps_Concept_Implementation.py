@@ -75,9 +75,9 @@ st.markdown(f"""
   </tr>
   <tr>
     <td align="center" rowspan="10">DevOps Team</td>
-    <td align="center" rowspan="2">CODE<br>CI/CD Pipeline</td>
+    <td align="center" rowspan="2">CODE<br>CI / CD Pipeline</td>
     <td align="left">-</td>
-    <td align="left">CI/CD 自動化</td>
+    <td align="left">CI / CD 自動化</td>
     <td align="left">GitHub Actions / GitLab CI / Jenkins</td>
   </tr>
   <tr>
