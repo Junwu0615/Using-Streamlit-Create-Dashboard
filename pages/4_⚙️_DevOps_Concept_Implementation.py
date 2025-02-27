@@ -75,9 +75,9 @@ st.markdown(f"""
   </tr>
   <tr>
     <td align="center" rowspan="10">DevOps Team</td>
-    <td align="center" rowspan="2">CODE<br>CI/CD Pipeline</td>
+    <td align="center" rowspan="2">CODE<br>CI / CD Pipeline</td>
     <td align="left">-</td>
-    <td align="left">CI/CD 自動化</td>
+    <td align="left">CI / CD 自動化</td>
     <td align="left">GitHub Actions / GitLab CI / Jenkins</td>
   </tr>
   <tr>
@@ -94,7 +94,23 @@ st.markdown(f"""
   <tr>
     <td align="left">-</td>
     <td align="left">雲端資源管理</td>
-    <td align="left">AWS, GCP, Azure</td>
+    <td align="left">AWS / GCP / Azure</td>
+  </tr>
+  <tr>
+    <td align="center" rowspan="3">BUILD & DEPLOY<br>配置管理</td>
+    <td align="left">-</td>
+    <td align="left">Docker</td>
+    <td align="left">Docker</td>
+  </tr>
+  <tr>
+    <td align="left">-</td>
+    <td align="left">Kubernetes 部署</td>
+    <td align="left">K8s / Helm / Istio</td>
+  </tr>
+  <tr>
+    <td align="left">-</td>
+    <td align="left">Secrets 管理</td>
+    <td align="left">HashiCorp Vault / AWS Secrets Manager</td>
   </tr>
   <tr>
     <td align="center" rowspan="3">OPERATE & MONITOR<br>監控與告警</td>
@@ -113,22 +129,6 @@ st.markdown(f"""
     <td align="left">AlertManager / PagerDuty</td>
   </tr>
   <tr>
-    <td align="center" rowspan="3">BUILD & DEPLOY<br>配置管理</td>
-    <td align="left">-</td>
-    <td align="left">Docker</td>
-    <td align="left">Docker / Docker Compose</td>
-  </tr>
-  <tr>
-    <td align="left">-</td>
-    <td align="left">Kubernetes 部署</td>
-    <td align="left">K8s, Helm, Istio</td>
-  </tr>
-  <tr>
-    <td align="left">-</td>
-    <td align="left">Secrets 管理</td>
-    <td align="left">HashiCorp Vault / AWS Secrets Manager</td>
-  </tr>
-    <tr>
     <td align="center" rowspan="5">Dev Team</td>
     <td align="center" rowspan="5">PLAN & CODE<br>應用程式開發</td>
     <td align="left">-</td>
@@ -169,11 +169,6 @@ st.markdown(f"""
   </tr>
   <tr>
     <td align="left">-</td>
-    <td align="left">Service Testing</td>
-    <td align="left">-</td>
-  </tr>
-  <tr>
-    <td align="left">-</td>
     <td align="left">Security Testing</td>
     <td align="left">OWASP ZAP / SonarQube</td>
   </tr>
@@ -181,6 +176,11 @@ st.markdown(f"""
     <td align="left">-</td>
     <td align="left">Load Testing</td>
     <td align="left">K6 / JMeter</td>
+  </tr>
+  <tr>
+    <td align="left">-</td>
+    <td align="left">Service Testing</td>
+    <td align="left">-</td>
   </tr>
 </table>
 """, unsafe_allow_html=True)
