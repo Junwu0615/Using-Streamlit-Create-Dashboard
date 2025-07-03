@@ -66,8 +66,9 @@ with col2:
     if st.button('[ Click Me ] Professional Growth'):
         text = ('- 2020 Shih Chien University - Information Management ( IM )\n'
                 '- 2023 Feng Chia University - Computer Science and Information Engineering ( CSIE )\n'
-                '- 2024 Data Scientist ( Hsinchu )\n'
-                '- 2025 ? ? ?')
+                '- 2024 Data Scientist ( Hsinchu City )\n'
+                '- 2025 Full Stack Engineer ( Taoyuan City )\n'
+                '- 2025 ???')
         st.write_stream(stream_data(text))
 
 with col3:
@@ -152,6 +153,20 @@ st.markdown(f'''
                     <br> C++
                 </td>
                 <td align="center" style="border: none;">
+                    <a href="https://markdown.tw/">
+                        <img alt="Markdown" width="45" height="50" src="https://skillicons.dev/icons?i=md"/>
+                    </a>
+                    <br> Markdown
+                </td>
+                <td align="center" style="border: none;">
+                    <a href="https://zh.wikipedia.org/zh-tw/SPARQL">
+                        <img alt="SPARQL" width="50" height="50" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/SPARQL.svg"/>
+                    </a>
+                    <br> SPARQL
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="border: none;">
                     <a href="https://developer.mozilla.org/zh-TW/docs/Web/HTML">
                         <img alt="HTML" width="40" height="50" src="https://skillicons.dev/icons?i=html"/>
                     </a>
@@ -164,10 +179,10 @@ st.markdown(f'''
                     <br> CSS
                 </td>
                 <td align="center" style="border: none;">
-                    <a href="https://markdown.tw/">
-                        <img alt="Markdown" width="45" height="50" src="https://skillicons.dev/icons?i=md"/>
+                    <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript">
+                        <img alt="JavaScript" width="40" height="40" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/javascript.svg"/>
                     </a>
-                    <br> Markdown
+                    <br> JavaScript
                 </td>
                 <td align="center" style="border: none;">
                     <a href="https://www.php.net/">
@@ -190,6 +205,12 @@ st.markdown(f'''
         </thead>
         <tbody>
             <tr>
+                <td align="center" style="border: none;">
+                    <a href="https://icons8.com/icons/set/sql-server">
+                        <img alt="SQL Server" width="50px" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/influxdb.png"/>
+                    </a>
+                    <br> Influx DB
+                </td>
                 <td align="center" style="border: none;">
                     <a href="https://icons8.com/icons/set/sql-server">
                         <img alt="SQL Server" width="50px" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/sql-server.png"/>
@@ -237,7 +258,7 @@ st.markdown(f'''
                 </td>
                 <td align="center" style="border: none;">
                     <a href="https://gemini.google.com/?hl=zh-TW" style="color: white;">
-                        <img alt="Google Gemini" width="75" height="65" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/Gemini.gif"/>
+                        <img alt="Google Gemini" width="50" height="50" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/Gemini.png"/>
                     </a>
                     <br> Google Gemini
                 </td>
@@ -264,12 +285,12 @@ st.markdown(f'''
     </table>
 </div>
 
-<!-- Deploy & Cloud -->
+<!-- Deploy & Service -->
 <div align="center">
     <table>
         <thead>
             <tr>
-                <th colspan="10" align="center"> Deploy & Cloud </th>
+                <th colspan="10" align="center"> Deploy & Service </th>
             </tr>
         </thead>
         <tbody>
@@ -280,6 +301,45 @@ st.markdown(f'''
                     </a>
                     <br> Docker
                 </td>
+                <td align="center" style="border: none;">
+                    <a href="https://grafana.com/" style="color: white;">
+                        <img alt="Grafana" width="40" height="50" src="https://skillicons.dev/icons?i=grafana"/>
+                    </a>
+                    <br> Grafana
+                </td>
+                <td align="center" style="border: none;">
+                    <a href="https://about.gitlab.com/" style="color: white;">
+                        <img alt="GitLab" width="40" height="40" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/gitlab.svg"/>
+                    </a>
+                    <br> GitLab
+                </td>
+                <td align="center" style="border: none;">
+                    <a href="https://nextcloud.com/" style="color: white;">
+                        <img alt="Nextcloud" width="50" height="50" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/nextcloud.svg"/>
+                    </a>
+                    <br> Nextcloud
+                </td>
+                <td align="center" style="border: none;">
+                    <a href="https://www.portainer.io/" style="color: white;">
+                        <img alt="Portainer" width="50" height="50" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/portainer.svg"/>
+                    </a>
+                    <br> Portainer
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Cloud -->
+<div align="center">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="10" align="center"> Cloud </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
                 <td align="center" style="border: none;">
                     <a href="https://aws.amazon.com" style="color: white;">
                         <img alt="AWS" width="40" height="50" src="https://techstack-generator.vercel.app/aws-icon.svg"/>
@@ -303,6 +363,7 @@ st.markdown(f'''
     </table>
 </div>
 
+
 <!-- Skills -->
 <div align="center">
     <table>
@@ -313,6 +374,12 @@ st.markdown(f'''
         </thead>
         <tbody>
             <tr>
+                <td align="center" style="border: none;">
+                    <a href="https://www.influxdata.com/time-series-platform/telegraf/" style="color: white;">
+                        <img alt="Telegraf" width="50" height="50" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/telegraf.png"/>
+                    </a>
+                    <br> Telegraf
+                </td>
                 <td align="center" style="border: none;">
                     <a href="https://numpy.org/">
                         <img alt="NumPy" width="40" height="50" src="https://cdn.worldvectorlogo.com/logos/numpy-1.svg"/>
@@ -336,12 +403,6 @@ st.markdown(f'''
                         <img alt="FastAPI" width="40" height="50" src="https://skillicons.dev/icons?i=fastapi"/>
                     </a>
                     <br> FastAPI
-                </td>
-                <td align="center" style="border: none;">
-                    <a href="https://ngrok.com/">
-                        <img alt="NGROK" width="45" height="45" src="https://avatars.githubusercontent.com/u/10625446?s=280&v=4"/>
-                    </a>
-                    <br> NGROK
                 </td>
             </tr>
             <tr>
@@ -374,6 +435,12 @@ st.markdown(f'''
                         <img alt="WampServer" width="40" height="40" src="https://www.bugtreat.com/blog/wp-content/uploads/2012/07/WampServer-logo.png"/>
                     </a>
                     <br> WampServer
+                </td>
+                <td align="center" style="border: none;">
+                    <a href="https://ngrok.com/">
+                        <img alt="NGROK" width="45" height="45" src="https://avatars.githubusercontent.com/u/10625446?s=280&v=4"/>
+                    </a>
+                    <br> NGROK
                 </td>
             </tr>
         </tbody>
@@ -489,14 +556,13 @@ st.markdown(f'''
     </table>
 </div>
 
-<!-- Operating System & Job Tools -->
+<!-- Operating System -->
 <div align="center">
     <table>
         <thead>
             <tr>
                 <th colspan="3" align="center"> Operating System </th>
                 <th colspan="2" align="center"> Command Tools </th>
-                <th colspan="4" align="center"> Job Tools </th>
             </tr>
         </thead>
         <tbody>
@@ -531,6 +597,21 @@ st.markdown(f'''
                     </a>
                     <br> CMD
                 </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Job Tools -->
+<div align="center">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5" align="center"> Job Tools </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
                 <td align="center" style="border: none;">
                     <a>
                         <img alt="Copilot" width="45" height="40" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/github_copilot.png"/>
@@ -548,6 +629,12 @@ st.markdown(f'''
                         <img alt="Notion" width="45" height="45" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/notion.png"/>
                     </a>
                     <br> Notion
+                </td>
+                <td align="center" style="border: none;">
+                    <a href="https://www.drawio.com/">
+                        <img alt="Drawio" width="40" height="40" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/diagramsdotnet.svg"/>
+                    </a>
+                    <br> Drawio
                 </td>
                 <td align="center" style="border: none;">
                     <a href="https://jmeter.apache.org/">
@@ -634,22 +721,10 @@ st.markdown(f'''
                     <br> React
                 </td>
                 <td align="center" style="border: none;">
-                    <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript" style="color: white;">
-                        <img alt="JavaScript" width="40" height="50" src="https://techstack-generator.vercel.app/js-icon.svg"/>
-                    </a>
-                    <br> JavaScript
-                </td>
-                <td align="center" style="border: none;">
                     <a href="https://www.djangoproject.com/" style="color: white;">
                         <img alt="Django" width="40" height="50" src="https://techstack-generator.vercel.app/django-icon.svg"/>
                     </a>
                     <br> Django
-                </td>
-                <td align="center" style="border: none;">
-                    <a href="https://grafana.com/" style="color: white;">
-                        <img alt="Grafana" width="40" height="50" src="https://skillicons.dev/icons?i=grafana"/>
-                    </a>
-                    <br> Grafana
                 </td>
                 <td align="center" style="border: none;">
                     <a href="https://kubernetes.io/" style="color: white;">
@@ -661,7 +736,6 @@ st.markdown(f'''
         </tbody>
     </table>
 </div>
-
 ''', unsafe_allow_html=True)
 
 st.markdown("""
