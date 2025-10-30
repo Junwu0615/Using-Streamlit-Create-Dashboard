@@ -376,6 +376,12 @@ st.markdown(f'''
                     </a>
                     <br> GitLab
                 </td>
+                <td align="center" style="border: none;">
+                    <a href="https://about.gitlab.com/" style="color: white;">
+                        <img alt="Jenkins" width="40" height="50" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/jenkins.png"/>
+                    </a>
+                    <br> Jenkins
+                </td>
             </tr>
             <tr>
                 <td align="center" style="border: none;">
@@ -541,7 +547,7 @@ st.markdown(f'''
     <table>
         <thead>
             <tr>
-                <th colspan="1" align="center"> CI / CD </th>
+                <th colspan="3" align="center"> CI / CD </th>
                 <th colspan="2" align="center"> Version Control </th>
             </tr>
         </thead>
@@ -552,6 +558,18 @@ st.markdown(f'''
                         <img alt="GitHub Actions" width="40" height="50" src="https://skillicons.dev/icons?i=githubactions"/>
                     </a>
                     <br> GitHub Actions
+                </td>
+                <td align="center" style="border: none;">
+                    <a href="https://about.gitlab.com/" style="color: white;">
+                        <img alt="GitLab CI" width="40" height="40" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/gitlab.svg"/>
+                    </a>
+                    <br> GitLab CI
+                </td>
+                <td align="center" style="border: none;">
+                    <a href="https://about.gitlab.com/" style="color: white;">
+                        <img alt="Jenkins CI / CD" width="40" height="50" src="https://raw.githubusercontent.com/Junwu0615/Junwu0615/main/icon/jenkins.png"/>
+                    </a>
+                    <br> Jenkins CI / CD
                 </td>
                 <td align="center" style="border: none;">
                     <a href="https://github.com/">
