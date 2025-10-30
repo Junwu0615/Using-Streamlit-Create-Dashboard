@@ -64,16 +64,19 @@ with col2:
     # I enjoy solving complex problems and continuously learning to improve my skills.
     # ''', unsafe_allow_html=True)
 
-    st.markdown(f'''
-    Hi, I'm a developer with comprehensive experience spanning **Data Engineering**, **Backend Development**,
-    and **Full-stack Application Architecture**. I excel in **DevOps Automation**
-    and deployment, specializing in leveraging a :blue-background[*programmatic mindset*] to optimize system performance,
-    data flows, and development efficiency. I am committed to continuous technological growth and deepening my expertise.
-    ''', unsafe_allow_html=True)
+    # st.markdown(f'''
+    # Hi, I'm a developer with comprehensive experience spanning **Data Engineering**, **Backend Development**,
+    # and **Full-stack Application Architecture**. I excel in **DevOps Automation**
+    # and deployment, specializing in leveraging a :blue-background[*programmatic mindset*] to optimize system performance,
+    # data flows, and development efficiency. I am committed to continuous technological growth and deepening my expertise.
+    # ''', unsafe_allow_html=True)
 
     st.markdown(f'''
-    Hi, I'm a versatile engineer :rocket: with a strong focus on: :blue-background[*Data Engineering*], 
-    :blue-background[*Backend Development*], **DevOps Automation**, and **Full-stack Architecture**. 
+    Hi, I'm a versatile engineer :rocket: with a strong focus on: 
+    :blue-background[*Data Engineering*], 
+    :blue-background[*Backend Development*], 
+    :blue-background[*DevOps Automation*], 
+    and :blue-background[*Full-stack Architecture*]. 
     I specialize in applying a programmatic mindset to enhance system efficiency and data pipeline performance, 
     while actively pursuing continuous technical mastery.
     ''', unsafe_allow_html=True)
