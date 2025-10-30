@@ -59,9 +59,23 @@ col1, col2, col3 = st.columns([0.75, 2, 0.8]) # 寬度比例
 with col1:
     st.image('./source/photo-stickers.jpg', caption='Photo-Stickers From My GitHub')
 with col2:
+    # st.markdown(f'''
+    # Hi, I'm **Ping Chun Wu** :sunglasses:, a passionate developer with a focus on :blue-background[*Data Science*], :blue-background[*Machine Learning*], and :blue-background[*Software Development*].
+    # I enjoy solving complex problems and continuously learning to improve my skills.
+    # ''', unsafe_allow_html=True)
+
     st.markdown(f'''
-    Hi, I'm **Ping Chun Wu** :sunglasses:, a passionate developer with a focus on :blue-background[*Data Science*], :blue-background[*Machine Learning*], and :blue-background[*Software Development*]. 
-    I enjoy solving complex problems and continuously learning to improve my skills.
+    Hi, I'm a developer with comprehensive experience spanning **Data Engineering**, **Backend Development**,
+    and **Full-stack Application Architecture**. I excel in **DevOps Automation**
+    and deployment, specializing in leveraging a :blue-background[*programmatic mindset*] to optimize system performance,
+    data flows, and development efficiency. I am committed to continuous technological growth and deepening my expertise.
+    ''', unsafe_allow_html=True)
+
+    st.markdown(f'''
+    Hi, I'm a versatile engineer :rocket: with a strong focus on: :blue-background[*Data Engineering*], 
+    :blue-background[*Backend Development*], **DevOps Automation**, and **Full-stack Architecture**. 
+    I specialize in applying a programmatic mindset to enhance system efficiency and data pipeline performance, 
+    while actively pursuing continuous technical mastery.
     ''', unsafe_allow_html=True)
 
     if st.button('[ Click Me ] Professional Growth'):
