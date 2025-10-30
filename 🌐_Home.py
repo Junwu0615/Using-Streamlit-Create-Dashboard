@@ -52,7 +52,8 @@ st.markdown(f"""
 <img alt="Visit_Count" src="https://img.shields.io/badge/Visit_Count-{visit_count('C2')}-blue?logo=ferrari&style=flat-square">
 """, unsafe_allow_html=True)
 
-st.write('# 🚀 :rainbow[*A self-evolving data scientist, just like Deep Learning*] 🚀<br>', unsafe_allow_html=True)
+# st.write('# 🚀 :rainbow[*A self-evolving data scientist, just like Deep Learning*] 🚀<br>', unsafe_allow_html=True)
+st.write('# 🚀 :rainbow[*Building Reliable Systems that Bridge Data and Automation*] 🚀<br>', unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns([0.75, 2, 0.8]) # 寬度比例
 with col1:
